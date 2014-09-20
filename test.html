@@ -26,12 +26,14 @@
     			<h2>Contact</h2>
     		</div>
     	</div>
-    	<div class="mainBack">
+        <div class="spaceTop"></div>
+    	<!-- <div class="mainBack"> -->
     		<div class="mainFront">
     			<h3 class="frontHeader">About</h3>
-                <p class="frontPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum, diam at sollicitudin vulputate, lorem tortor rhoncus ante, sit amet sodales leo enim sed leo. Pellentesque quis mi sed diam congue egestas. Quisque egestas diam et justo fringilla tincidunt. Nulla fermentum, sem et tristique dignissim, metus justo faucibus elit, sed ultrices massa ipsum eget lorem. Sed volutpat tempor facilisis. Nulla venenatis viverra lacus, nec viverra sem congue a. Proin imperdiet risus et neque aliquet, non dignissim erat lacinia. Phasellus tristique iaculis imperdiet. Etiam ex ipsum, mattis at lacus in, fermentum condimentum magna. Vivamus condimentum sem in lectus congue, et ultrices velit ultricies. Donec eu erat vestibulum, tempus ante et, vestibulum ipsum. Donec vestibulum semper urna, vulputate fermentum magna congue vel. Sed nec nisl ligula.</p>
-    		</div>
+                <p class="frontPara">Synth narwhal Intelligentsia Godard forage pug. Schlitz whatever art party Cosby sweater cornhole farm-to-table, lomo fingerstache banh mi cardigan polaroid chia master cleanse Echo Park. Cardigan flannel locavore Neutra vinyl kale chips. Pug yr quinoa, twee authentic salvia hella Neutra Intelligentsia American Apparel kitsch synth craft beer pork belly. Asymmetrical scenester authentic chia synth. Sustainable Banksy literally cornhole polaroid, seitan iPhone you probably haven't heard of them cardigan Tumblr aesthetic. Fanny pack Williamsburg pug YOLO, twee Intelligentsia American Apparel.</p>
+    		<!-- </div> -->
     	</div>
+        <div class="spaceBot"></div>
     	
     	<div class="footer">
             <p id="footerText"><i class="fa fa-arrow-circle-right"></i> Created by Brandon Yu 2014</p>
@@ -90,8 +92,8 @@
         .barHighlight {
             background-color: #2980b9;
         }
-        .mainBack {
-            height: 85%;
+        .spaceTop {
+            height: 7%;
             width: 100%;
             background-color: #e74c3c;
             left: 0%;
@@ -99,12 +101,30 @@
             position: absolute;
             z-index: -1;
         }
+        .spaceBot {                     /*EDIT WHEN YOU EDIT mainFront HEIGHT*/
+            height: 7%;
+            width: 100%;
+            background-color: #e74c3c;
+            left: 0%;
+            top: 85%;
+            position: absolute;
+            z-index: -1;
+        }
+        /*.mainBack {
+            height: 71%;
+            width: 100%;
+            background-color: #e74c3c;
+            left: 0%;
+            top: 50px;
+            position: absolute;
+            z-index: -1;
+        }*/
         .mainFront {
             height: 400px;
             width: 80%;
             background-color: #ffcec9;
             left: 10%;
-            top: 7%;
+            top: 14%;
             position: absolute;
             padding-left: 5%;
             padding-right: 5%;
@@ -141,9 +161,10 @@
             text-align: center;
         }
         h1 {
-            font-size: 1.1666666em; /*14pt*/
+            font-size: 1em; /*14pt: 1.1666666em*/
             position: relative;
             top: -5px;
+            font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
         }
         h2 {
             font-size: 0.8333333em;  /*10pt*/
