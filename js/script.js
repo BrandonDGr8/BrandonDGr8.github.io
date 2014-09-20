@@ -5,5 +5,19 @@ $(document).ready(function () {
 	$(".bar").mouseleave(function () {
 		$(this).removeClass("barHighlight");
 	});
-	
+	$("#barAbout").click(function () {
+
+	});
+	$("#barEducation").click(function () {
+		$(body).addClass();
+	});
+	$("#barName").click(function () {
+
+	});
+	$("#barProjects").click(function () {
+
+	});
+	$("#barContact").click(function () {
+
+	});
 });
