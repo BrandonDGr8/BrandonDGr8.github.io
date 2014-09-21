@@ -103,6 +103,7 @@
             -moz-box-sizing: border-box;    /* Firefox, other Gecko */
             box-sizing: border-box;         /* Opera/IE 8+ */
             z-index: -1;
+            border-radius: 10%;
         }
         .footer {
             height: 8%;
@@ -181,7 +182,7 @@
 
         #backContact {
             background-color: #e67e22;
-            height: 85%;
+            height: 100%;
         }
         #frontContact {
             background-color: #eea667;
