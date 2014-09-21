@@ -133,7 +133,7 @@
         }
         #backAbout {
             background-color: #e74c3c;
-            height: 90%;
+            height: 100%;
         }
         #frontAbout {
             background-color: #ef8b80;
@@ -149,7 +149,7 @@
 
         #backEdu {
             background-color: #2ecc71;
-            height: 175%;
+            height: 185%;
         }
         #frontEdu {
             background-color: #69dd9a;
@@ -165,7 +165,7 @@
 
         #backProj {
             background-color: #f1c40f;
-            height: 240%;
+            height: 250%;
         }
         #frontProj {
             background-color: #f5d657;
