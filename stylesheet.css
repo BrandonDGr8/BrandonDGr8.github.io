@@ -107,7 +107,7 @@
             -moz-box-sizing: border-box;    /* Firefox, other Gecko */
             box-sizing: border-box;         /* Opera/IE 8+ */
             z-index: -1;
-            border-radius: 70px;
+            border-radius: 20px;
         }
         .footer {
             height: 8%;
