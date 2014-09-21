@@ -18,6 +18,7 @@
     		left: 0%;
     		position: absolute;
             margin: 0%;
+            cursor: pointer
     	}
     	#barEducation {
     		height: 50px;
@@ -26,6 +27,7 @@
     		left: 20%;
     		position: absolute;
             margin: 0%;
+            cursor: pointer
     	}
     	#barName {
     		height: 50px;
@@ -34,6 +36,7 @@
     		left: 40%;
     		position: absolute;
             margin: 0%;
+            cursor: pointer
     	}
     	#barProjects {
     		height: 50px;
@@ -42,6 +45,7 @@
     		left: 60%;
     		position: absolute;
             margin: 0%;
+            cursor: pointer
     	}
     	#barContact {
     		height: 50px;
@@ -50,8 +54,12 @@
     		left: 80%;
     		position: absolute;
             margin: 0%;
+            cursor: pointer
     	}
         .barHighlight {
+            background-color: #3498db;
+        }
+        .barHighlightStay {
             background-color: #3498db;
         }
         .spaceTop {

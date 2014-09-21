@@ -26,6 +26,12 @@ $(document).ready(function () {
 	});
 
 	$("#barAbout").click(function () {
+		$("#barEducation").removeClass("barHighlightStay");
+		$("#barProjects").removeClass("barHighlightStay");
+		$("#barContact").removeClass("barHighlightStay");
+
+		$("#barAbout").addClass("barHighlightStay");
+
 		$("#backEdu").hide();
 		$("#frontEdu").hide();
 		$("#textEdu").hide();
@@ -48,6 +54,12 @@ $(document).ready(function () {
 	});
 
 	$("#barEducation").click(function () {
+		$("#barAbout").removeClass("barHighlightStay");
+		$("#barProjects").removeClass("barHighlightStay");
+		$("#barContact").removeClass("barHighlightStay");
+
+		$("#barEducation").addClass("barHighlightStay");
+
 		$("#backAbout").hide();
 		$("#frontAbout").hide();
 		$("#textAbout").hide();
@@ -70,6 +82,12 @@ $(document).ready(function () {
 	});
 
 	$("#barName").click(function () {
+		$("#barEducation").removeClass("barHighlightStay");
+		$("#barProjects").removeClass("barHighlightStay");
+		$("#barContact").removeClass("barHighlightStay");
+
+		$("#barAbout").addClass("barHighlightStay");
+		
 		$("#backEdu").hide();
 		$("#frontEdu").hide();
 		$("#textEdu").hide();
@@ -92,6 +110,12 @@ $(document).ready(function () {
 	});
 
 	$("#barProjects").click(function () {
+		$("#barEducation").removeClass("barHighlightStay");
+		$("#barAbout").removeClass("barHighlightStay");
+		$("#barContact").removeClass("barHighlightStay");
+
+		$("#barProjects").addClass("barHighlightStay");
+
 		$("#backEdu").hide();
 		$("#frontEdu").hide();
 		$("#textEdu").hide();
@@ -114,6 +138,12 @@ $(document).ready(function () {
 	});
 
 	$("#barContact").click(function () {
+		$("#barEducation").removeClass("barHighlightStay");
+		$("#barProjects").removeClass("barHighlightStay");
+		$("#barAbout").removeClass("barHighlightStay");
+
+		$("#barContact").addClass("barHighlightStay");
+
 		$("#backEdu").hide();
 		$("#frontEdu").hide();
 		$("#textEdu").hide();
