@@ -9,7 +9,10 @@ $(document).ready(function () {
 
 	});
 	$("#barEducation").click(function () {
-		$(body).addClass();
+		$("#backAbout").hide();
+		$("#frontAbout").hide();
+		$("#textAbout").hide();
+		$("#footerAbout").hide();
 	});
 	$("#barName").click(function () {
 

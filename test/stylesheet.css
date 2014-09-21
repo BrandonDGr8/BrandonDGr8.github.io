@@ -73,7 +73,7 @@
             z-index: -1;*/
         }
         .mainBack {
-            height: 85%;
+            height: 100%;
             width: 100%;
             left: 0%;
             top: 50px;
@@ -111,7 +111,7 @@
             z-index: 1;
             margin: 0%;
         }
-        #footerText {
+        .footerText {
             text-align: left;
             color: #ecf0f1;
             font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
@@ -151,6 +151,36 @@
         }
         #footerEdu {
             background-color: #27ae60;
+        }
+
+
+        #backProj {
+            background-color: #f1c40f;
+        }
+        #frontProj {
+            background-color: #f5d657;
+            height: 400px;
+        }
+        #textProj {
+
+        }
+        #footerProj {
+            background-color: #f39c12;
+        }
+
+
+        #backContact {
+            background-color: #e67e22;
+        }
+        #frontContact {
+            background-color: #eea667;
+            height: 400px;
+        }
+        #textContact {
+
+        }
+        #footerContact {
+            background-color: #d35400;
         }
 
 
