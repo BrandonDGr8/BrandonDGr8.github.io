@@ -351,7 +351,7 @@
             text-decoration: underline;
         }
         li {
-            list-style-type: none;
+            /*list-style-type: none;*/
         }
         @media only screen and (max-width: 1024px) {
 
