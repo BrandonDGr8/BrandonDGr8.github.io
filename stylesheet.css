@@ -110,11 +110,12 @@
             border-radius: 20px;
         }
         .footer {
-            height: 8%;
+            height: 50px;
             width: 100%;
             left: 0%;
-            top: 92%;
+            /*top: 92%;*/
             position: fixed;
+                bottom: 0px;
             padding-left: 5%;
             padding-right: 5%;
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
