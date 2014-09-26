@@ -1,0 +1,23 @@
+.time {
+    font-size: 6em;
+    font-family: "Open Sans", helvetica;
+    text-align: center;
+    margin-top: 17%;
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: -999;
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
