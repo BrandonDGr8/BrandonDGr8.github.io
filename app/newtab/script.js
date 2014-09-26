@@ -6,11 +6,15 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     var o = "";
-    if (h <= 12) {
+    if (h <= 11) {
         o = "AM";
+        if (h == 0)
+            h = 12;
     }
     else {
-        h-=12;
+        if (h != 12) {
+            h-=12;
+        }
         o = "PM";
     }
     document.getElementById('txt').innerHTML = h + ":" + m + ":" + s + o;
@@ -37,28 +41,10 @@ function checkHour() {
             else {
                 $("#image").attr("src", "img/mountains-night-1.jpg");
             }
-
-
-
-            // if (h > 5 && h < 9) {
-            //     $("#image").attr("src", "img/mountains-dawn-1.jpg");
-            // }
-            // else if (h > 10 && h < 17) {
-            //     $("#image").attr("src", "img/mountains-noon-1.jpg");
-            // }
-            // else if (h > 17 && h < 21) {
-            //     $("#image").attr("src", "img/mountains-sunset-1.jpg");
-            // }
-            // else if (h > 21 && h <5) {
-            //     $("#image").attr("src", "img/mountains-night-1.jpg");
-            // }
     });
 }
 
-
-
-
 function checkTime(i) {
-    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i<10) {i = "0" + i};
     return i;
 }
