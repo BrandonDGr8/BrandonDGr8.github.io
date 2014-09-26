@@ -17,7 +17,9 @@ function startTime() {
         }
         o = "PM";
     }
-    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s + o;
+    document.getElementById('txt').innerHTML = h + ":" + m;
+    document.getElementById('smaller').innerHTML = ":" + s;
+    document.getElementById('small').innerHTML = o;
     var t = setTimeout(function(){startTime()},500);
     checkHour();
 }

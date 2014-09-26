@@ -1,11 +1,26 @@
 .time {
-    font-size: 6em;
-    font-family: "Open Sans", helvetica;
-    text-align: center;
     margin-top: 17%;
     height: 100%;
     width: 100%;
+    font-family: "Open Sans", helvetica;
+    text-align: center;
     color: #FFFFFF;
+}
+
+p {
+    display: inline;
+}
+
+#txt {
+    font-size: 6em;
+}
+
+#smaller {
+    font-size: 3em;
+}
+
+#small {
+    font-size: 4.5em;
 }
 
 #background {
