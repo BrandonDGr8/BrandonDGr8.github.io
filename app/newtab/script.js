@@ -1,20 +1,3 @@
-$(document).ready(function () {
-    var today = new Date();
-    var h = today.getHours;
-    if (h > 5 && h < 9) {
-        $("#image").attr("src", "img/mountains-dawn-1.jpg");
-    }
-    else if (h > 10 && h < 17) {
-        $("#image").attr("src", "img/mountains-noon-1.jpg");
-    }
-    else if (h > 17 && h < 21) {
-        $("#image").attr("src", "img/mountains-sunset-1.jpg");
-    }
-    else {
-        $("#image").attr("src", "img/mountains-night-1.jpg");
-    }
-});
-
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -32,6 +15,44 @@ function startTime() {
     }
     document.getElementById('txt').innerHTML = h + ":" + m + ":" + s + o;
     var t = setTimeout(function(){startTime()},500);
+    checkHour();
+}
+
+function checkHour() {
+    $(document).ready(function () {
+        var today = new Date();
+        var h = today.getHours();
+            if (h < 5) {
+                $("#image").attr("src", "img/mountains-night-1.jpg");
+            }
+            else if (h < 9) {
+                $("#image").attr("src", "img/mountains-dawn-1.jpg");
+            }
+            else if (h < 17) {
+                $("#image").attr("src", "img/mountains-noon-1.jpg");
+            }
+            else if (h < 21) {
+                $("#image").attr("src", "img/mountains-sunset-1.jpg");
+            }
+            else {
+                $("#image").attr("src", "img/mountains-night-1.jpg");
+            }
+
+
+
+            // if (h > 5 && h < 9) {
+            //     $("#image").attr("src", "img/mountains-dawn-1.jpg");
+            // }
+            // else if (h > 10 && h < 17) {
+            //     $("#image").attr("src", "img/mountains-noon-1.jpg");
+            // }
+            // else if (h > 17 && h < 21) {
+            //     $("#image").attr("src", "img/mountains-sunset-1.jpg");
+            // }
+            // else if (h > 21 && h <5) {
+            //     $("#image").attr("src", "img/mountains-night-1.jpg");
+            // }
+    });
 }
 
 
