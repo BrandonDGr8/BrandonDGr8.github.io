@@ -9,7 +9,6 @@ var sunset = "";
 
 
 $(document).ready(function () {
-    $.cookie("scene","beach");
     $(".list").hide();
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
