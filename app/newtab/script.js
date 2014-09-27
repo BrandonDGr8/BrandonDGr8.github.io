@@ -1,9 +1,15 @@
-var night = "img/mountains-night-1.jpg";
-var day = "img/mountains-day-1.jpg";
-var dawn = "img/mountains-dawn-1.jpg";
-var sunset = "img/mountains-sunset-1.jpg";
+// var night = "img/mountains-night-1.jpg";
+// var day = "img/mountains-day-1.jpg";
+// var dawn = "img/mountains-dawn-1.jpg";
+// var sunset = "img/mountains-sunset-1.jpg";
+var night = "";
+var day = "";
+var dawn = "";
+var sunset = "";
+
 
 $(document).ready(function () {
+    $.cookie("scene","beach");
     $(".list").hide();
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
@@ -20,32 +26,30 @@ $(document).ready(function () {
     });
     $(".mountains").click(function () {
         // setCookie("scene", "mountains", 365);
-        night = "img/mountains-night-1.jpg";
-        day = "img/mountains-day-1.jpg";
-        dawn = "img/mountains-dawn-1.jpg";
-        sunset = "img/mountains-sunset-1.jpg";
+        $.cookie("scene", "mountains", { expires: 365 });
+        // night = "img/mountains-night-1.jpg";
+        // day = "img/mountains-day-1.jpg";
+        // dawn = "img/mountains-dawn-1.jpg";
+        // sunset = "img/mountains-sunset-1.jpg";
     });
     $(".beach").click(function () {
         // setCookie("scene", "beach", 365);
-        night = "img/beach-night-1.jpg";
-        day = "img/beach-day-1.jpg";
-        dawn = "img/beach-dawn-1.jpg";
-        sunset = "img/beach-sunset-1.jpg";
+        $.cookie("scene", "beach", { expires: 365 });
+        // night = "img/beach-night-1.jpg";
+        // day = "img/beach-day-1.jpg";
+        // dawn = "img/beach-dawn-1.jpg";
+        // sunset = "img/beach-sunset-1.jpg";
     });
     $(".sky").click(function () {
         // setCookie("scene", "sky", 365);
-        night = "img/sky-night-1.jpg";
-        day = "img/sky-day-1.jpg";
-        dawn = "img/sky-dawn-1.jpg";
-        sunset = "img/sky-sunset-1.jpg";
+        $.cookie("scene", "sky", { expires: 365 });
+        // night = "img/sky-night-1.jpg";
+        // day = "img/sky-day-1.jpg";
+        // dawn = "img/sky-dawn-1.jpg";
+        // sunset = "img/sky-sunset-1.jpg";
     });
 });
 
-
-// var night = "";
-// var day = "";
-// var dawn = "";
-// var sunset = "";
 
 
 function startTime() {
@@ -71,7 +75,7 @@ function startTime() {
     document.getElementById('smaller').innerHTML = ":" + s;
     document.getElementById('small').innerHTML = o;
     var t = setTimeout(function(){startTime()},500);
-    // checkCookie();
+    checkCookie();
     checkHour();
 }
 
@@ -120,38 +124,38 @@ function checkTime(i) {
 //     return "";
 // }
 
-// function checkCookie() {
-//     var s=getCookie("scene");
-//     if (s=="") {
-//         night = "img/mountains-night-1.jpg";
-//         day = "img/mountains-day-1.jpg";
-//         dawn = "img/mountains-dawn-1.jpg";
-//         sunset = "img/mountains-sunset-1.jpg";
-//         // console.log("null");
-//     }
-//     else if (s=="mountains") {
-//         night = "img/mountains-night-1.jpg";
-//         day = "img/mountains-day-1.jpg";
-//         dawn = "img/mountains-dawn-1.jpg";
-//         sunset = "img/mountains-sunset-1.jpg";
-//         // console.log("mountains");
-//     }
-//     else if (s=="beach") {
-//         night = "img/beach-night-1.jpg";
-//         day = "img/beach-day-1.jpg";
-//         dawn = "img/beach-dawn-1.jpg";
-//         sunset = "img/beach-sunset-1.jpg";
-//         // console.log("beach");
-//     }
-//     else if (s=="sky") {
-//         night = "img/sky-night-1.jpg";
-//         day = "img/sky-day-1.jpg";
-//         dawn = "img/sky-dawn-1.jpg";
-//         sunset = "img/sky-sunset-1.jpg";
-//         // console.log("sky");
-//     }
+function checkCookie() {
+    var s = $.cookie("scene");
+    if (s == undefined) {
+        night = "img/mountains-night-1.jpg";
+        day = "img/mountains-day-1.jpg";
+        dawn = "img/mountains-dawn-1.jpg";
+        sunset = "img/mountains-sunset-1.jpg";
+        // console.log("null");
+    }
+    else if (s == "mountains") {
+        night = "img/mountains-night-1.jpg";
+        day = "img/mountains-day-1.jpg";
+        dawn = "img/mountains-dawn-1.jpg";
+        sunset = "img/mountains-sunset-1.jpg";
+        // console.log("mountains");
+    }
+    else if (s == "beach") {
+        night = "img/beach-night-1.jpg";
+        day = "img/beach-day-1.jpg";
+        dawn = "img/beach-dawn-1.jpg";
+        sunset = "img/beach-sunset-1.jpg";
+        // console.log("beach");
+    }
+    else if (s == "sky") {
+        night = "img/sky-night-1.jpg";
+        day = "img/sky-day-1.jpg";
+        dawn = "img/sky-dawn-1.jpg";
+        sunset = "img/sky-sunset-1.jpg";
+        // console.log("sky");
+    }
         
-// }
+}
 
 // function deleteCookie() {
 //     document.cookie = "scene=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
