@@ -36,3 +36,24 @@ p {
     width: 100%;
     height: 100%;
 }
+
+.yucode {
+    text-align: right;
+    font-family: "Open Sans", helvetica;
+    color: #FFFFFF;
+    top: 0%;
+    width: 100%;
+    left: 0;
+    padding-right: 0.5%;
+    text-decoration: underline;
+    font-size: 1em;
+    position: absolute; 
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}

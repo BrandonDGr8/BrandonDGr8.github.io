@@ -127,10 +127,36 @@
             border-top-right-radius: 0px;
         }
         .footerText {
-            text-align: left;
             color: #ecf0f1;
             font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
+        }
+        .footerLeft {
             font-size: 0.8333333em;
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            text-align: left;
+            float: left;
+            width: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
+        }
+        .footerRight {
+            font-size: 1.3em;
+            top: -23%;
+            left: 50%;
+            position: absolute;
+            text-align: right;
+            float: right;
+            width: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
         }
         .frontHeader {
 
