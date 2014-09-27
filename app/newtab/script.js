@@ -26,7 +26,7 @@ $(document).ready(function () {
     $(".mountains").click(function () {
         // setCookie("scene", "mountains", 365);
         // $.removeCookie("scene");
-        $.cookie("scene", "mountains");
+        $.cookie("scene", "mountains", {expires:365});
         // night = "img/mountains-night-1.jpg";
         // day = "img/mountains-day-1.jpg";
         // dawn = "img/mountains-dawn-1.jpg";
@@ -35,7 +35,7 @@ $(document).ready(function () {
     $(".beach").click(function () {
         // setCookie("scene", "beach", 365);
         // $.removeCookie("scene");
-        $.cookie("scene", "beach");
+        $.cookie("scene", "beach", {expires:365});
         // night = "img/beach-night-1.jpg";
         // day = "img/beach-day-1.jpg";
         // dawn = "img/beach-dawn-1.jpg";
@@ -44,7 +44,7 @@ $(document).ready(function () {
     $(".sky").click(function () {
         // setCookie("scene", "sky", 365);
         // $.removeCookie("scene");
-        $.cookie("scene", "sky");
+        $.cookie("scene", "sky", {expires:365});
         // night = "img/sky-night-1.jpg";
         // day = "img/sky-day-1.jpg";
         // dawn = "img/sky-dawn-1.jpg";
