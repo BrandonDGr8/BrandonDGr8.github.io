@@ -1,8 +1,5 @@
 $(document).ready(function () {
-	var red = "'background-color','#e74c3c'";
-	var green = "'background-color','#2ecc71'";
-	var yellow = "'background-color','#f1c40f'";
-	var orange = "'background-color','#e67e22'";
+	
 
 	$("#backEdu").hide();
 	$("#frontEdu").hide();
@@ -29,8 +26,6 @@ $(document).ready(function () {
 	});
 
 	$("#barAbout").click(function () {
-		window.scrollTo(0, 0);
-		$("body").css('background-color','#e74c3c');
 		$("#barEducation").removeClass("barHighlightStay");
 		$("#barProjects").removeClass("barHighlightStay");
 		$("#barContact").removeClass("barHighlightStay");
@@ -59,8 +54,6 @@ $(document).ready(function () {
 	});
 
 	$("#barEducation").click(function () {
-		window.scrollTo(0, 0);
-		$("body").css('background-color','#2ecc71');
 		$("#barAbout").removeClass("barHighlightStay");
 		$("#barProjects").removeClass("barHighlightStay");
 		$("#barContact").removeClass("barHighlightStay");
@@ -89,8 +82,6 @@ $(document).ready(function () {
 	});
 
 	$("#barName").click(function () {
-		window.scrollTo(0, 0);
-		$("body").css('background-color','#e74c3c');
 		$("#barEducation").removeClass("barHighlightStay");
 		$("#barProjects").removeClass("barHighlightStay");
 		$("#barContact").removeClass("barHighlightStay");
@@ -119,8 +110,6 @@ $(document).ready(function () {
 	});
 
 	$("#barProjects").click(function () {
-		window.scrollTo(0, 0);
-		$("body").css('background-color','#f1c40f');
 		$("#barEducation").removeClass("barHighlightStay");
 		$("#barAbout").removeClass("barHighlightStay");
 		$("#barContact").removeClass("barHighlightStay");
@@ -149,8 +138,6 @@ $(document).ready(function () {
 	});
 
 	$("#barContact").click(function () {
-		window.scrollTo(0, 0);
-		$("body").css('background-color','#e67e22');
 		$("#barEducation").removeClass("barHighlightStay");
 		$("#barProjects").removeClass("barHighlightStay");
 		$("#barAbout").removeClass("barHighlightStay");
