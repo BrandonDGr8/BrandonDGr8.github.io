@@ -100,9 +100,10 @@ a {
 }
 
 .list {
+    text-align: center;
     background-color: #FFFFFF;
-    height: 170px;
-    width: 200px;
+    height: 215px;
+    width: 14%;
     top: 1%;
     left: 1%;
     position: absolute;
@@ -136,4 +137,45 @@ p {
 
 .sky {
     cursor: pointer;
+}
+
+.city {
+    cursor: pointer;
+}
+
+.arctic {
+    cursor: pointer;
+}
+
+.i {
+    height: 19px;
+    width: 19px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 45%;
+    margin-right: 55%;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.description {
+    font-size: 0.9em;
+    font-family: "Open Sans", helvetica;
+    text-align: left;
+    background-color: #FFFFFF;
+    height: 215px;
+    width: 350px;
+    top: 1%;
+    left: 15%;
+    position: absolute;
+    padding-top: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    margin-bottom: 1%;
 }

@@ -10,6 +10,7 @@ var sunset = "";
 
 $(document).ready(function () {
     $(".list").hide();
+    $(".description").hide();
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
         $(this).fadeTo("fast",0.5)
@@ -17,11 +18,42 @@ $(document).ready(function () {
     $(".button").mouseleave(function () {
         $(this).fadeTo("fast",0.2)
     });
+    $(".mountains").mouseenter(function () {
+        $(this).fadeTo("fast",0.6)
+    });
+    $(".mountains").mouseleave(function () {
+        $(this).fadeTo("fast",1)
+    });
+    $(".beach").mouseenter(function () {
+        $(this).fadeTo("fast",0.6)
+    });
+    $(".beach").mouseleave(function () {
+        $(this).fadeTo("fast",1)
+    });
+    $(".sky").mouseenter(function () {
+        $(this).fadeTo("fast",0.6)
+    });
+    $(".sky").mouseleave(function () {
+        $(this).fadeTo("fast",1)
+    });
+    $(".city").mouseenter(function () {
+        $(this).fadeTo("fast",0.6)
+    });
+    $(".city").mouseleave(function () {
+        $(this).fadeTo("fast",1)
+    });
+    $(".arctic").mouseenter(function () {
+        $(this).fadeTo("fast",0.6)
+    });
+    $(".arctic").mouseleave(function () {
+        $(this).fadeTo("fast",1)
+    });
     $(".button").click(function () {
         $(".list").fadeTo("fast",0.7);
     });
     $(".list").mouseleave(function () {
         $(this).hide("fast");
+        $(".description").hide();
     });
     $(".mountains").click(function () {
         // setCookie("scene", "mountains", 365);
@@ -49,6 +81,15 @@ $(document).ready(function () {
         // day = "img/sky-day-1.jpg";
         // dawn = "img/sky-dawn-1.jpg";
         // sunset = "img/sky-sunset-1.jpg";
+    });
+    $(".city").click(function () {
+        $.cookie("scene", "city", {expires:365});
+    });
+    $(".arctic").click(function () {
+        $.cookie("scene", "arctic", {expires:365});
+    });
+    $(".i").click(function () {
+        $(".description").fadeTo("fast", 0.7);
     });
 });
 
@@ -155,6 +196,18 @@ function checkCookie() {
         dawn = "img/sky-dawn-1.jpg";
         sunset = "img/sky-sunset-1.jpg";
         // console.log("sky");
+    }
+    else if (s == "city") {
+        night = "img/city-night-1.jpg";
+        day = "img/city-day-1.jpg";
+        dawn = "img/city-dawn-1.jpg";
+        sunset = "img/city-sunset-1.jpg";
+    }
+    else if (s == "arctic") {
+        night = "img/arctic-night-1.jpg";
+        day = "img/arctic-day-1.jpg";
+        dawn = "img/arctic-dawn-1.jpg";
+        sunset = "img/arctic-sunset-1.jpg";
     }
         
 }
