@@ -1,3 +1,10 @@
+* { 
+        -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
+}
+
 .time {
     margin-top: 12.7%;
     height: 100%;
