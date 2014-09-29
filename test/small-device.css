@@ -157,7 +157,7 @@
             top: -23%;
             left: 70%;
             position: absolute;
-            text-align: center;
+            text-align: left;
             float: right;
             width: 40%;
             padding-left: 5%;
@@ -243,14 +243,9 @@
         }
 
         .left {
-            width: 80%;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 3%;
-            margin-bottom: 7%;
-            /*left: 10%;*/
-            /*top: 14%;*/
-            position: absolute;
+            position: relative;
+            float: none;
+            width: 100%;
             padding-left: 5%;
             padding-right: 5%;
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -258,14 +253,9 @@
             box-sizing: border-box;         /* Opera/IE 8+ */
         }
         .right {
-            width: 80%;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 3%;
-            margin-bottom: 7%;
-            /*left: 10%;*/
-            /*top: 14%;*/
-            position: absolute;
+            position: relative;
+            float: none;
+            width: 100%;
             padding-left: 5%;
             padding-right: 5%;
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
