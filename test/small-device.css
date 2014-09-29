@@ -131,7 +131,7 @@
             font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
         }
         .footerLeft {
-            font-size: 4em;
+            font-size: 2em;
             top: 0%;
             left: 0%;
             position: absolute;
@@ -339,7 +339,7 @@
 
 
         h1 {
-            font-size: 4; /*14pt: 1.1666666em*/
+            font-size: 4em; /*14pt: 1.1666666em*/
             position: relative;
             /*top: -5px;*/
             font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
