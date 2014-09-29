@@ -1,5 +1,5 @@
         #topBar {
-    		height: 7%;
+    		height: 10%;
     		width: 100%;
     		background-color: #2c3e50;
     		text-align: center;
@@ -14,7 +14,7 @@
             border-bottom-right-radius: 0px;
     	}
         #barAbout {
-    		height: 7%;
+    		height: 10%;
     		width: 20%;
     		/*background-color: #2c3e50;*/
     		left: 0%;
@@ -23,7 +23,7 @@
             cursor: pointer
     	}
     	#barEducation {
-    		height: 7%;
+    		height: 10%;
     		width: 20%;
     		/*background-color: #2c3e50;*/
     		left: 20%;
@@ -32,7 +32,7 @@
             cursor: pointer
     	}
     	#barName {
-    		height: 7%;
+    		height: 10%;
     		width: 20%;
     		/*background-color: #2c3e50;*/
     		left: 40%;
@@ -41,7 +41,7 @@
             cursor: pointer
     	}
     	#barProjects {
-    		height: 7%;
+    		height: 10%;
     		width: 20%;
     		/*background-color: #2c3e50;*/
     		left: 60%;
@@ -50,7 +50,7 @@
             cursor: pointer
     	}
     	#barContact {
-    		height: 7%;
+    		height: 10%;
     		width: 20%;
     		/*background-color: #2c3e50;*/
     		left: 80%;
@@ -86,9 +86,10 @@
             
             width: 100%;
             left: 0%;
-            top: 50px;
+            top: 10%;
             position: absolute;
             z-index: -1;
+            height: auto;
         }
         .mainFront {
             width: 80%;
@@ -108,9 +109,10 @@
             box-sizing: border-box;         /* Opera/IE 8+ */
             z-index: -1;
             border-radius: 20px;
+            font-size: 4em;
         }
         .footer {
-            height: 7%;
+            height: 10%;
             width: 100%;
             left: 0%;
             /*top: 92%;*/
@@ -131,13 +133,13 @@
             font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
         }
         .footerLeft {
-            font-size: 2em;
+            font-size: 3em;
             top: 0%;
             left: 0%;
             position: absolute;
             text-align: left;
             float: left;
-            width: 50%;
+            width: 70%;
             padding-left: 5%;
             padding-right: 5%;
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -147,11 +149,11 @@
         .footerRight {
             font-size: 4.5em;
             top: -23%;
-            left: 50%;
+            left: 70%;
             position: absolute;
             text-align: right;
             float: right;
-            width: 50%;
+            width: 30%;
             padding-left: 5%;
             padding-right: 5%;
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -225,7 +227,7 @@
 
         }
         .contactLink {
-            font-size: 6em;
+            font-size: 8em;
         }
         #footerContact {
             background-color: #d35400;
@@ -339,7 +341,7 @@
 
 
         h1 {
-            font-size: 4em; /*14pt: 1.1666666em*/
+            font-size: 3em; /*14pt: 1.1666666em*/
             position: relative;
             /*top: -5px;*/
             font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
@@ -352,12 +354,12 @@
         h3 {
             font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
             text-align: center;
-            font-size: 4em;
+            font-size: 6em;
         }
         h4 {
             font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
             text-align: center;
-            font-size: 4em;
+            font-size: 5em;
         }
         img {
             border-radius: 100%;   
