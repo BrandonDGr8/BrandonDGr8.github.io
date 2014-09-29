@@ -104,7 +104,7 @@
             margin-bottom: 7%;
             /*left: 10%;*/
             /*top: 14%;*/
-            position: absolute;
+            /*position: absolute;*/
             padding-left: 5%;
             padding-right: 5%;
             padding-bottom: 3%;
@@ -117,7 +117,7 @@
         }
 
         .bottom {
-            position: relative;
+            position: absolute;
             height: 10%;
             clear: both;
         }
