@@ -109,7 +109,6 @@
             box-sizing: border-box;         /* Opera/IE 8+ */
             z-index: -1;
             border-radius: 20px;
-            font-size: 4em;
         }
         .footer {
             height: 10%;
@@ -176,6 +175,7 @@
             /*height: 490px;*/
         }
         #textAbout {
+            font-size: 2em;
 
         }
         #footerAbout {
@@ -192,7 +192,7 @@
             /*height: 970px;*/
         }
         #textEdu {
-
+            font-size: 2em;
         }
         #footerEdu {
             background-color: #27ae60;
@@ -208,7 +208,7 @@
             /*height: 1400px;*/
         }
         #textProj {
-
+            font-size: 2em;
         }
         #footerProj {
             background-color: #f39c12;
@@ -224,7 +224,7 @@
             /*height: 400px;*/
         }
         #textContact {
-
+            font-size: 2em;
         }
         .contactLink {
             font-size: 8em;
