@@ -117,7 +117,7 @@
         }
 
         .bottom {
-            position: absolute;
+            position: relative;
             height: 10%;
             clear: both;
         }
