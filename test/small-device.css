@@ -95,21 +95,23 @@
             position: relative;
             z-index: -1;
             height: auto;
+            margin: 0 auto;
             margin-top: 10%;
-            margin-bottom: 10%;
+            margin-bottom: 20%;
+            overflow: auto;
         }
         .mainFront {
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
-            margin-top: 3%;
-            margin-bottom: 10%;
+            margin-top: 10%;
+            margin-bottom: 20%;
             /*left: 10%;*/
             /*top: 14%;*/
             /*position: absolute;*/
             padding-left: 5%;
             padding-right: 5%;
-            padding-bottom: 3%;
+            padding-bottom: 5%;
             padding-top: 0%;
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
             -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -119,12 +121,12 @@
         }
 
         .bottom {
-            /*position: relative;*/
+            /*position: relative;
             height: 100%;
             width: 100%;
             clear: both;
             z-index: 5;
-            background-color: #FFFFFF;
+            background-color: #FFFFFF;*/
         }
 
         .footer {
