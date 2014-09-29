@@ -92,9 +92,10 @@
             width: 100%;
             left: 0%;
             top: 10%;
-            position: absolute;
+            position: relative;
             z-index: -1;
             height: auto;
+            margin-bottom: 10%;
         }
         .mainFront {
             width: 80%;
@@ -117,7 +118,7 @@
         }
 
         .bottom {
-            position: relative;
+            /*position: relative;*/
             height: 100%;
             width: 100%;
             clear: both;
