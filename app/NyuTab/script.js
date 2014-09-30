@@ -53,7 +53,12 @@ $(document).ready(function () {
     });
     $(".list").mouseleave(function () {
         $(this).hide("fast");
-        $(".description").hide();
+    });
+    $(".i").click(function () {
+        $(".description").fadeTo("fast", 0.7);
+    });
+    $(".close").click(function () {
+        $(".description").hide("fast");
     });
     $(".mountains").click(function () {
         // setCookie("scene", "mountains", 365);
@@ -87,9 +92,6 @@ $(document).ready(function () {
     });
     $(".arctic").click(function () {
         $.cookie("scene", "arctic", {expires:365});
-    });
-    $(".i").click(function () {
-        $(".description").fadeTo("fast", 0.7);
     });
 });
 

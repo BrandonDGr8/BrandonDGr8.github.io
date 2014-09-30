@@ -45,24 +45,26 @@ p {
 }
 
 .yucode {
-    text-align: right;
+    /*text-align: right;*/
     font-family: "Open Sans", helvetica;
-    color: #FFFFFF;
+    /*color: #FFFFFF;
     top: 0%;
     width: 100%;
     left: 0;
-    padding-right: 0.5%;
+    padding-right: 0.5%;*/
     text-decoration: underline;
-    font-size: 1em;
+    /*font-size: 1em;
     position: absolute; 
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;*/     
+    font-size: 0.9em;
+    color: #000000;   
 }
 
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .button {
@@ -109,16 +111,18 @@ a {
 .list {
     text-align: center;
     background-color: #FFFFFF;
-    height: 215px;
+    height: auto;
     width: 14%;
     top: 1%;
     left: 1%;
     position: absolute;
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 2%;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+    overflow: hidden;
 }
 
 h1 {
@@ -159,12 +163,15 @@ p {
     width: 19px;
     cursor: pointer;
     position: relative;
-    margin-left: 45%;
-    margin-right: 55%;
+    /*margin-left: 45%;
+    margin-right: 55%;*/
     background-color: #000000;
     color: #FFFFFF;
     border-radius: 100%;
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .description {
@@ -172,17 +179,30 @@ p {
     font-family: "Open Sans", helvetica;
     text-align: left;
     background-color: #FFFFFF;
-    height: 215px;
-    width: 350px;
+    height: auto;
+    width: 30%;
     top: 1%;
-    left: 15%;
+    left: 35%;
     position: absolute;
-    padding-top: 0.5%;
+    padding-top: 2%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 0.5%;
+    padding-bottom: 2%;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
     margin-bottom: 1%;
+}
+
+.close {
+    height: 19px;
+    width: 19px;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 100%;
+    text-align: center; 
 }
