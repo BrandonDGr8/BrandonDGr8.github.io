@@ -60,7 +60,8 @@ p {
     -moz-box-sizing: border-box;    
     box-sizing: border-box;*/     
     font-size: 1.8em;
-    color: #000000;   
+    color: #000000; 
+    display: inline;  
 }
 
 a {
