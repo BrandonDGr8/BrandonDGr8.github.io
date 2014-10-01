@@ -197,7 +197,7 @@ function checkCookie() {
         sunset = "img/arctic-sunset-1.jpg";
     }
     else if (s == "forest") {
-        night = "img/forest-night-1.jpg";
+        night = "img/forest-night-2.jpg";
         day = "img/forest-day-1.jpg";
         dawn = "img/forest-dawn-1.jpg";
         sunset = "img/forest-sunset-1.jpg";
