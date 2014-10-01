@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="small-device.css" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <title>Nyu Tab</title>
+    </head>
+
+    <body onload="startTime()">
+        <div class="button">
+            <div class="top"></div>
+            <div class="mid"></div>
+            <div class="bot"></div>
+        </div>
+        <div class="list">
+                <h1>Select Scenery</h1>
+                <p class="mountains">Mountains</p><br>
+                <p class="beach">Beaches</p><br>
+                <p class="sky">Skies</p><br>
+                <p class="city">City</p><br>
+                <p class="arctic">Arctic</p><br>
+                <p class="forest">Forest</p><br>
+                <div class="i">i</div>   
+        </div>
+        <div class="description">
+            <div class="close">X</div>
+            Thanks for using Nyu Tab! This page is meant to be your browser's New Tab or Home page. The background changes depending on the time of day. You may change your scenery by clicking the options on the left. This is still a work in progress so expect future updates! <br>Visit <a class="yucode" href="http://yucode.org/">http://yucode.org/</a> and contact me if you have feedback!
+        </div>
+        <div class="info"></div>
+        <div class="time">
+            <p id="txt"></p><p id="smaller"></p><p id="small"></p>
+        </div>
+        <div id="background">
+            <img id="image" src="" class="stretch" alt=""/>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+            <script type="text/javascript" src="jquery-cookies/jquery.cookie.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
