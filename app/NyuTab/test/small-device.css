@@ -6,8 +6,7 @@
 }
 
 .time {
-    top: 0%;
-    left: 0%;
+    margin-top: 50%;
     margin-bottom: 50%;
     height: 100%;
     width: 100%;
@@ -61,14 +60,13 @@ p {
     -moz-box-sizing: border-box;    
     box-sizing: border-box;*/     
     font-size: 1.8em;
-    color: #000000; 
-    /*display: inline;  */
+    color: #000000;   
 }
 
 a {
+    font-size: 1.8em;
     text-decoration: none;
     color: #000000;
-    font-size: 1.8em;
 }
 
 .button {
@@ -192,7 +190,7 @@ p {
     height: auto;
     width: 60%;
     top: 1%;
-    left: 20%;
+    left: 29%;
     position: absolute;
     padding-top: 4%;
     padding-left: 4%;
@@ -201,7 +199,7 @@ p {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 .close {
