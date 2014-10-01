@@ -13,40 +13,46 @@ $(document).ready(function () {
     $(".description").hide();
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
-        $(this).fadeTo("fast",0.5)
+        $(this).fadeTo("fast",0.5);
     });
     $(".button").mouseleave(function () {
-        $(this).fadeTo("fast",0.2)
+        $(this).fadeTo("fast",0.2);
     });
     $(".mountains").mouseenter(function () {
-        $(this).fadeTo("fast",0.6)
+        $(this).fadeTo("fast",0.6);
     });
     $(".mountains").mouseleave(function () {
-        $(this).fadeTo("fast",1)
+        $(this).fadeTo("fast",1);
     });
     $(".beach").mouseenter(function () {
-        $(this).fadeTo("fast",0.6)
+        $(this).fadeTo("fast",0.6);
     });
     $(".beach").mouseleave(function () {
-        $(this).fadeTo("fast",1)
+        $(this).fadeTo("fast",1);
     });
     $(".sky").mouseenter(function () {
-        $(this).fadeTo("fast",0.6)
+        $(this).fadeTo("fast",0.6);
     });
     $(".sky").mouseleave(function () {
-        $(this).fadeTo("fast",1)
+        $(this).fadeTo("fast",1);
     });
     $(".city").mouseenter(function () {
-        $(this).fadeTo("fast",0.6)
+        $(this).fadeTo("fast",0.6);
     });
     $(".city").mouseleave(function () {
-        $(this).fadeTo("fast",1)
+        $(this).fadeTo("fast",1);
     });
     $(".arctic").mouseenter(function () {
-        $(this).fadeTo("fast",0.6)
+        $(this).fadeTo("fast",0.6);
     });
     $(".arctic").mouseleave(function () {
-        $(this).fadeTo("fast",1)
+        $(this).fadeTo("fast",1);
+    });
+    $(".forest").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".forest").mouseleave(function () {
+        $(this).fadeTo("fast",1);
     });
     $(".button").click(function () {
         $(".list").fadeTo("fast",0.7);
@@ -57,41 +63,38 @@ $(document).ready(function () {
     $(".i").click(function () {
         $(".description").fadeTo("fast", 0.7);
     });
+    $(".i").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".i").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
     $(".close").click(function () {
         $(".description").hide("fast");
     });
+    $(".close").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".close").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
     $(".mountains").click(function () {
-        // setCookie("scene", "mountains", 365);
-        // $.removeCookie("scene");
         $.cookie("scene", "mountains", {expires:365});
-        // night = "img/mountains-night-1.jpg";
-        // day = "img/mountains-day-1.jpg";
-        // dawn = "img/mountains-dawn-1.jpg";
-        // sunset = "img/mountains-sunset-1.jpg";
     });
     $(".beach").click(function () {
-        // setCookie("scene", "beach", 365);
-        // $.removeCookie("scene");
         $.cookie("scene", "beach", {expires:365});
-        // night = "img/beach-night-1.jpg";
-        // day = "img/beach-day-1.jpg";
-        // dawn = "img/beach-dawn-1.jpg";
-        // sunset = "img/beach-sunset-1.jpg";
     });
     $(".sky").click(function () {
-        // setCookie("scene", "sky", 365);
-        // $.removeCookie("scene");
         $.cookie("scene", "sky", {expires:365});
-        // night = "img/sky-night-1.jpg";
-        // day = "img/sky-day-1.jpg";
-        // dawn = "img/sky-dawn-1.jpg";
-        // sunset = "img/sky-sunset-1.jpg";
     });
     $(".city").click(function () {
         $.cookie("scene", "city", {expires:365});
     });
     $(".arctic").click(function () {
         $.cookie("scene", "arctic", {expires:365});
+    });
+    $(".forest").click(function () {
+        $.cookie("scene", "forest", {expires:365});
     });
 });
 
@@ -151,24 +154,6 @@ function checkTime(i) {
     return i;
 }
 
-// function setCookie(cname, cvalue, exdays) {
-//     var d = new Date();
-//     d.setTime(d.getTime() + (exdays*24*60*60*1000));
-//     var expires = "expires="+d.toUTCString();
-//     document.cookie = cname + "=" + cvalue + "; " + expires;
-// }
-
-// function getCookie(cname) {
-//     var name = cname + "=";
-//     var ca = document.cookie.split(';');
-//     for(var i=0; i<ca.length; i++) {
-//         var c = ca[i];
-//         while (c.charAt(0)==' ') c = c.substring(1);
-//         if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
-//     }
-//     return "";
-// }
-
 function checkCookie() {
     var s = $.cookie("scene");
     if (s == undefined) {
@@ -211,63 +196,11 @@ function checkCookie() {
         dawn = "img/arctic-dawn-1.jpg";
         sunset = "img/arctic-sunset-1.jpg";
     }
+    else if (s == "forest") {
+        night = "img/forest-night-1.jpg";
+        day = "img/forest-day-1.jpg";
+        dawn = "img/forest-dawn-1.jpg";
+        sunset = "img/forest-sunset-1.jpg";
+    }
         
 }
-
-// function deleteCookie() {
-//     document.cookie = "scene=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-// }
-
-            // if (h < 5) {
-            //     $("#image").attr("src", "img/mountains-night-1.jpg");
-            // }
-            // else if (h < 9) {
-            //     $("#image").attr("src", "img/mountains-dawn-1.jpg");
-            // }
-            // else if (h < 17) {
-            //     $("#image").attr("src", "img/mountains-day-1.jpg");
-            // }
-            // else if (h < 21) {
-            //     $("#image").attr("src", "img/mountains-sunset-1.jpg");
-            // }
-            // else {
-            //     $("#image").attr("src", "img/mountains-night-1.jpg");
-            // }
-
-
-
-
-            // if (h < 5) {
-            //     $("#image").attr("src", "img/beach-night-1.jpg");
-            // }
-            // else if (h < 9) {
-            //     $("#image").attr("src", "img/beach-dawn-1.jpg");
-            // }
-            // else if (h < 17) {
-            //     $("#image").attr("src", "img/beach-day-1.jpg");
-            // }
-            // else if (h < 21) {
-            //     $("#image").attr("src", "img/beach-sunset-1.jpg");
-            // }
-            // else {
-            //     $("#image").attr("src", "img/beach-night-1.jpg");
-            // }
-
-
-
-
-            // if (h < 5) {
-            //     $("#image").attr("src", "img/sky-night-1.jpg");
-            // }
-            // else if (h < 9) {
-            //     $("#image").attr("src", "img/sky-dawn-1.jpg");
-            // }
-            // else if (h < 17) {
-            //     $("#image").attr("src", "img/sky-day-1.jpg");
-            // }
-            // else if (h < 21) {
-            //     $("#image").attr("src", "img/sky-sunset-1.jpg");
-            // }
-            // else {
-            //     $("#image").attr("src", "img/sky-night-1.jpg");
-            // }
