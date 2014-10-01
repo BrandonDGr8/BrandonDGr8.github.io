@@ -66,9 +66,9 @@ p {
 }
 
 a {
-    font-size: 1.8em;
     text-decoration: none;
     color: #000000;
+    font-size: 1.8em;
 }
 
 .button {
@@ -192,7 +192,7 @@ p {
     height: auto;
     width: 60%;
     top: 1%;
-    left: 29%;
+    left: 20%;
     position: absolute;
     padding-top: 4%;
     padding-left: 4%;
@@ -201,7 +201,7 @@ p {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .close {
