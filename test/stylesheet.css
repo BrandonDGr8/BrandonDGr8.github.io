@@ -403,11 +403,11 @@
         }
         @media only screen and (max-width: 480px) {
 
-             body { font-size: 0.7em; }
+             /*body { font-size: 0.2em; }*/
 
         }
         @media only screen and (max-width: 320px) {
 
-             body { font-size: 0.1em; }
+             body { font-size: 0.2em; }
 
         }
