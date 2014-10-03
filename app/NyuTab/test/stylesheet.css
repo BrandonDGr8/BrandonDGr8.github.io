@@ -211,3 +211,29 @@ p {
     border-radius: 100%;
     text-align: center; 
 }
+
+@media only screen and (max-width: 1024px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
+@media only screen and (max-width: 768px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
+@media only screen and (max-width: 600px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
+@media only screen and (max-width: 480px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
+@media only screen and (max-width: 320px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
