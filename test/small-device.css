@@ -97,7 +97,7 @@
             
             width: 100%;
             left: 0%;
-            top: 10%;
+            top: 0%;
             position: absolute;
             z-index: -1;
         }
@@ -118,7 +118,7 @@
             -moz-box-sizing: border-box;    /* Firefox, other Gecko */
             box-sizing: border-box;         /* Opera/IE 8+ */
             z-index: -1;
-            border-radius: 20px;
+            /*border-radius: 20px;*/
         }
 
         .bottom {
