@@ -105,15 +105,15 @@
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
-            margin-top: 13%;
-            margin-bottom: 7%;
+            /*margin-top: 13%;*/
+            /*margin-bottom: 7%;*/
             /*left: 10%;*/
             /*top: 14%;*/
             /*position: absolute;*/
             padding-left: 5%;
             padding-right: 5%;
-            padding-bottom: 15%;
-            padding-top: 0%;
+            padding-bottom: 22%;
+            padding-top: 13%;
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
             -moz-box-sizing: border-box;    /* Firefox, other Gecko */
             box-sizing: border-box;         /* Opera/IE 8+ */
