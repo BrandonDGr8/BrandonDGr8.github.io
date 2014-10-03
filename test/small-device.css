@@ -103,6 +103,7 @@
         }
         .mainFront {
             width: 80%;
+            height: 100%;
             margin-left: 10%;
             margin-right: 10%;
             margin-top: 13%;
@@ -118,7 +119,7 @@
             -moz-box-sizing: border-box;    /* Firefox, other Gecko */
             box-sizing: border-box;         /* Opera/IE 8+ */
             z-index: -1;
-            /*border-radius: 20px;*/
+            border-radius: 0px;
         }
 
         .bottom {
