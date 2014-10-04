@@ -54,6 +54,18 @@ $(document).ready(function () {
     $(".forest").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
+    $(".desert").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".desert").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
+    $(".earth").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".earth").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
     $(".button").click(function () {
         $(".list").fadeTo("fast",0.7);
     });
@@ -95,6 +107,12 @@ $(document).ready(function () {
     });
     $(".forest").click(function () {
         $.cookie("scene", "forest", {expires:365});
+    });
+    $(".desert").click(function () {
+        $.cookie("scene", "desert", {expires:365});
+    });
+    $(".earth").click(function () {
+        $.cookie("scene", "earth", {expires:365});
     });
 });
 
@@ -201,6 +219,18 @@ function checkCookie() {
         day = "img/forest-day-1.jpg";
         dawn = "img/forest-dawn-1.jpg";
         sunset = "img/forest-sunset-1.jpg";
+    }
+    else if (s == "desert") {
+        night = "img/desert-night-1.jpg";
+        day = "img/desert-day-1.jpg";
+        dawn = "img/desert-dawn-1.jpg";
+        sunset = "img/desert-sunset-1.jpg";
+    }
+    else if (s == "earth") {
+        night = "img/earth-night-1.jpg";
+        day = "img/earth-day-1.jpg";
+        dawn = "img/earth-dawn-1.jpg";
+        sunset = "img/earth-sunset-1.jpg";
     }
         
 }

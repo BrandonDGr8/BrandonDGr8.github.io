@@ -161,6 +161,14 @@ p {
     cursor: pointer;
 }
 
+.desert {
+    cursor: pointer;
+}
+
+.earth {
+    cursor: pointer;
+}
+
 .i {
     height: 19px;
     width: 19px;
