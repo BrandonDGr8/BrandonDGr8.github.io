@@ -1,0 +1,221 @@
+.header {
+	font-family: "Open Sans", helvetica;
+	width: 100%;
+	height: 15%;
+	top: 0%;
+	left: 0%;
+	position: absolute;
+	/*background-color: #FF00FF;*/
+}
+
+.mid {
+	font-family: "Open Sans", helvetica;
+	position: relative;
+	height: 490px;
+	width: 700px;
+	/*top: 15%;*/
+	/*left: 0%;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7.34%;
+	background-color: #000000;
+}
+
+.messageBar {
+	width: 100%;
+	height: 10%;
+	top: 0%;
+	left: 0%;
+	background-color: #000000;
+	color: #FFFFFF;
+	padding-left: 2%;
+	padding-top: 1%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.footer {
+	font-family: "Open Sans", helvetica;
+	left: 30%;
+	width: 40%;
+	height: 8.5%;
+	position: relative;
+	margin-top: 0%;
+	/*background-color: #0fff0f;*/
+}
+
+.footL {
+	float: left;
+	text-align: center;
+	width: 50%;
+	/*background-color: #F00F0F;*/
+	cursor: pointer;
+}
+
+.footR {
+	float: right;
+	text-align: center;
+	width: 50%;
+	/*background-color: #0F00FF;*/
+	cursor: pointer;
+}
+
+.botText {
+	text-align: center;
+
+}
+
+.description {
+	font-family: "Open Sans", helvetica;
+	top: 60%;
+	left: 30%;
+	width: 40%;
+	/*height: 10%;*/
+	/*margin-right: 30%;*/
+	margin-left: 0%;
+	position: absolute;
+	z-index: 15;
+	display: none;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.instructions {
+	font-family: "Open Sans", helvetica;
+	top: 60%;
+	left: 30%;
+	width: 40%;
+	/*height: 10%;*/
+	/*margin-right: 30%;*/
+	margin-left: 0%;
+	position: absolute;
+	z-index: 15;
+	display: none;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.play {
+	color: #FFFFFF;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.4em;
+	margin-top: 1%;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	padding-top: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    cursor: pointer;
+    color: #000000;
+}
+
+h3 {
+	text-align: center;
+}
+
+img {
+	top: 0%;
+	left: 0%;
+	position: absolute;
+	z-index: -1;
+}
+
+.timeElapsed {
+	color: #FFFFFF;
+	top: 93%;
+	left: 3%;
+	position: absolute;
+}
+
+.numHeals {
+	color: #FFFFFF;
+	top: 90%;
+	left: 80%;
+	position: absolute;
+}
+
+.untilHeal {
+	color: #FFFFFF;
+	top: 93%;
+	left: 80%;
+	position: absolute;
+}
+
+.pause {
+	font-size: 3em;
+	/*text-align: center;*/
+	color: #FFFFFF;
+	margin-top: 0%;
+	margin-left: 66%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	z-index: 15;
+}
+
+.gameover {
+	font-size: 2em;
+	/*text-align: center;*/
+	color: #FFFFFF;
+	margin-top: 0%;
+	margin-left: 66%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	z-index: 15;
+}
+
+img {
+	z-index: 12;
+}
+
+.head {
+	position: absolute;
+	top: 80px;
+	left: 325.5px;
+	cursor: pointer;
+}
+
+.rightA {
+	position: absolute;
+	top: 146px;
+	left: 378.3px;
+	cursor: pointer;
+}
+
+.leftA {
+	
+	position: absolute;
+	top: 147px;
+	left: 254px;
+	cursor: pointer;
+}
+
+.rightL {
+	position: absolute;
+	top: 270px;
+	left: 353px;
+	cursor: pointer;
+}
+
+.leftL {
+	position: absolute;
+	top: 270px;
+	left: 310px;
+	cursor: pointer;
+}
+
+.torso {
+	position: absolute;
+	top: 141px;
+	left: 312px;
+	cursor: pointer;
+}
