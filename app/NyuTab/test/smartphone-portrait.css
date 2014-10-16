@@ -258,4 +258,11 @@ p {
 
 .savebutton {
     cursor: pointer;
+    font-family: "Open Sans", helvetica;
+    width: auto;
+}
+
+.textbox {
+    /*font-size: 1em;*/
+    width: 60%;
 }
