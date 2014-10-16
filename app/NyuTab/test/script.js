@@ -283,16 +283,17 @@ function saveCustom(input) {
     var customlink = document.getElementById(input).value;
     switch(input) {
         case 'dawnbox':
-            $.cookie("dawncustom", input, {expires:365});
+            console.log(input);
+            $.cookie("dawncustom", customlink, {expires:365});
             break;
         case 'daybox':
-            $.cookie("daycustom", input, {expires:365});
+            $.cookie("daycustom", customlink, {expires:365});
             break;
         case 'sunsetbox':
-            $.cookie("sunsetcustom", input, {expires:365});
+            $.cookie("sunsetcustom", customlink, {expires:365});
             break;
         case 'nightbox':
-            $.cookie("nightcustom", input, {expires:365});
+            $.cookie("nightcustom", customlink, {expires:365});
             break;
     }
 
