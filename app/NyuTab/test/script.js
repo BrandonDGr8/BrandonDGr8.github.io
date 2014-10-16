@@ -12,11 +12,6 @@ var cday = "img/customerror.jpg";
 var cdawn = "img/customerror.jpg";
 var csunset = "img/customerror.jpg";
 
-var dawnC = false;
-var dayC = false;
-var sunsetC = false;
-var nightC = false;
-
 // $.cookie("dawncustom", "img/customerror.jpg", {expires:365});
 // $.cookie("daycustom", "img/customerror.jpg", {expires:365});
 // $.cookie("sunsetcustom", "img/customerror.jpg", {expires:365});
@@ -276,22 +271,22 @@ function checkCookie() {
         sunset = "img/earth-sunset-1.jpg";
     }
     else if (s == "custom") {
-        if (nightC)
+        if ($.cookie('nightcustom') == undefined)
+            night = "img/errorcustom.jpg";
+        else
             night = $.cookie('nightcustom');
+        if ($.cookie('sunsetcustom') == undefined)
+            sunset = "img/errorcustom.jpg";
         else
-            night = "img/errorcustom.jpg";
-        if (dayC)
-            night = $.cookie('daycustom');
+            sunset = $.cookie('sunsetcustom');
+        if ($.cookie('daycustom') == undefined)
+            day = "img/errorcustom.jpg";
         else
-            night = "img/errorcustom.jpg";
-        if (dawnC)
-            night = $.cookie('dawncustom');
+            day = $.cookie('daycustom');
+        if ($.cookie('dawncustom') == undefined)
+            dawn = "img/errorcustom.jpg";
         else
-            night = "img/errorcustom.jpg";
-        if (sunsetC)
-            night = $.cookie('sunsetcustom');
-        else
-            night = "img/errorcustom.jpg";
+            dawn = $.cookie('dawncustom');
     }
         
 }
