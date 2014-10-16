@@ -272,19 +272,19 @@ function checkCookie() {
     }
     else if (s == "custom") {
         if ($.cookie('nightcustom') == undefined)
-            night = "img/errorcustom.jpg";
+            night = "img/customerror.jpg";
         else
             night = $.cookie('nightcustom');
         if ($.cookie('sunsetcustom') == undefined)
-            sunset = "img/errorcustom.jpg";
+            sunset = "img/customerror.jpg";
         else
             sunset = $.cookie('sunsetcustom');
         if ($.cookie('daycustom') == undefined)
-            day = "img/errorcustom.jpg";
+            day = "img/customerror.jpg";
         else
             day = $.cookie('daycustom');
         if ($.cookie('dawncustom') == undefined)
-            dawn = "img/errorcustom.jpg";
+            dawn = "img/customerror.jpg";
         else
             dawn = $.cookie('dawncustom');
     }
