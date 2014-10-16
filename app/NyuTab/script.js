@@ -7,10 +7,21 @@ var day = "";
 var dawn = "";
 var sunset = "";
 
+var cnight = "img/customerror.jpg";
+var cday = "img/customerror.jpg";
+var cdawn = "img/customerror.jpg";
+var csunset = "img/customerror.jpg";
+
+// $.cookie("dawncustom", "img/customerror.jpg", {expires:365});
+// $.cookie("daycustom", "img/customerror.jpg", {expires:365});
+// $.cookie("sunsetcustom", "img/customerror.jpg", {expires:365});
+// $.cookie("nightcustom", "img/customerror.jpg", {expires:365});
+
 
 $(document).ready(function () {
     $(".list").hide();
     $(".description").hide();
+    $(".custommenu").hide();
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
         $(this).fadeTo("fast",0.5);
@@ -66,6 +77,18 @@ $(document).ready(function () {
     $(".earth").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
+    $(".custom").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".custom").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
+    $(".editcustom").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".editcustom").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
     $(".button").click(function () {
         $(".list").fadeTo("fast",0.7);
     });
@@ -74,6 +97,17 @@ $(document).ready(function () {
     });
     $(".i").click(function () {
         $(".description").fadeTo("fast", 0.7);
+        $(".custommenu").hide("fast");
+    });
+    $(".i").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".i").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
+    $(".editcustom").click(function () {
+        $(".custommenu").fadeTo("fast", 0.7);
+        $(".description").hide("fast");
     });
     $(".i").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -83,6 +117,7 @@ $(document).ready(function () {
     });
     $(".close").click(function () {
         $(".description").hide("fast");
+        $(".custommenu").hide("fast");
     });
     $(".close").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -113,6 +148,9 @@ $(document).ready(function () {
     });
     $(".earth").click(function () {
         $.cookie("scene", "earth", {expires:365});
+    });
+    $(".custom").click(function () {
+        $.cookie("scene", "custom", {expires:365});
     });
 });
 
@@ -232,5 +270,43 @@ function checkCookie() {
         dawn = "img/earth-dawn-1.jpg";
         sunset = "img/earth-sunset-1.jpg";
     }
+    else if (s == "custom") {
+        if ($.cookie('nightcustom') == undefined)
+            night = "img/customerror.jpg";
+        else
+            night = $.cookie('nightcustom');
+        if ($.cookie('sunsetcustom') == undefined)
+            sunset = "img/customerror.jpg";
+        else
+            sunset = $.cookie('sunsetcustom');
+        if ($.cookie('daycustom') == undefined)
+            day = "img/customerror.jpg";
+        else
+            day = $.cookie('daycustom');
+        if ($.cookie('dawncustom') == undefined)
+            dawn = "img/customerror.jpg";
+        else
+            dawn = $.cookie('dawncustom');
+    }
         
+}
+
+function saveCustom(input) {
+    var customlink = document.getElementById(input).value;
+    switch(input) {
+        case 'dawnbox':
+            console.log(input);
+            $.cookie("dawncustom", customlink, {expires:365});
+            break;
+        case 'daybox':
+            $.cookie("daycustom", customlink, {expires:365});
+            break;
+        case 'sunsetbox':
+            $.cookie("sunsetcustom", customlink, {expires:365});
+            break;
+        case 'nightbox':
+            $.cookie("nightcustom", customlink, {expires:365});
+            break;
+    }
+
 }

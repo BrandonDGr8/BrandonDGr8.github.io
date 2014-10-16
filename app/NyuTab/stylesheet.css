@@ -169,6 +169,14 @@ p {
     cursor: pointer;
 }
 
+.custom {
+    cursor: pointer;
+}
+
+.editcustom {
+    cursor: pointer;
+}
+
 .i {
     height: 19px;
     width: 19px;
@@ -218,6 +226,43 @@ p {
     color: #FFFFFF;
     border-radius: 100%;
     text-align: center; 
+}
+
+.custommenu {
+    font-size: 1em;
+    font-family: "Open Sans", helvetica;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: auto;
+    width: 30%;
+    top: 1%;
+    left: 35%;
+    position: absolute;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    margin-bottom: 1%;
+}
+
+.customtxt {
+    font-size: 1em;
+    font-family: "Open Sans", helvetica;
+}
+
+.savebutton {
+    /*font-size: 1em;*/
+    cursor: pointer;
+    font-family: "Open Sans", helvetica;
+    width: auto;
+}
+
+.textbox {
+    /*font-size: 1em;*/
+    width: 60%;
 }
 
 @media only screen and (max-width: 1024px) {
