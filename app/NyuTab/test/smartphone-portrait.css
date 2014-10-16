@@ -172,6 +172,14 @@ p {
     cursor: pointer;
 }
 
+.custom {
+    cursor: pointer;
+}
+
+.editcustom {
+    cursor: pointer;
+}
+
 .i {
     height: 38px;
     width: 38px;
@@ -221,4 +229,33 @@ p {
     color: #FFFFFF;
     border-radius: 100%;
     text-align: center; 
+}
+
+.custommenu {
+    font-size: 1.8em;
+    font-family: "Open Sans", helvetica;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: auto;
+    width: 60%;
+    top: 1%;
+    left: 29%;
+    position: absolute;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    margin-bottom: 2%;
+}
+
+.customtxt {
+    font-size: 1.8em;
+    font-family: "Open Sans", helvetica;
+}
+
+.savebutton {
+    cursor: pointer;
 }
