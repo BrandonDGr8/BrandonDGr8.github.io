@@ -19,9 +19,6 @@ var csunset = "img/customerror.jpg";
 
 
 $(document).ready(function () {
-    $(".list").hide();
-    $(".description").hide();
-    $(".custommenu").hide();
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
         $(this).fadeTo("fast",0.5);
@@ -89,6 +86,12 @@ $(document).ready(function () {
     $(".editcustom").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
+    $(".options").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".options").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
     $(".button").click(function () {
         $(".list").fadeTo("fast",0.7);
     });
@@ -98,6 +101,7 @@ $(document).ready(function () {
     $(".i").click(function () {
         $(".description").fadeTo("fast", 0.7);
         $(".custommenu").hide("fast");
+        $(".optionsmenu").hide("fast");
     });
     $(".i").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -108,6 +112,12 @@ $(document).ready(function () {
     $(".editcustom").click(function () {
         $(".custommenu").fadeTo("fast", 0.7);
         $(".description").hide("fast");
+        $(".optionsmenu").hide("fast");
+    });
+    $(".options").click(function () {
+        $(".optionsmenu").fadeTo("fast", 0.7);
+        $(".description").hide("fast");
+        $(".custommenu").hide("fast");
     });
     $(".i").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -118,6 +128,7 @@ $(document).ready(function () {
     $(".close").click(function () {
         $(".description").hide("fast");
         $(".custommenu").hide("fast");
+        $(".optionsmenu").hide("fast");
     });
     $(".close").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -152,6 +163,13 @@ $(document).ready(function () {
     $(".custom").click(function () {
         $.cookie("scene", "custom", {expires:365});
     });
+
+    $(".displayAge").click(function () {
+        $.cookie("displayTxt", "age", {expires:365});
+    });
+    $(".displayClock").click(function () {
+        $.cookie("displayTxt", "clock", {expires:365});
+    });
 });
 
 
@@ -175,9 +193,16 @@ function startTime() {
         }
         o = "PM";
     }
-    document.getElementById('txt').innerHTML = h + ":" + m;
-    document.getElementById('smaller').innerHTML = ":" + s;
-    document.getElementById('small').innerHTML = o;
+    if ($.cookie("displayTxt") === undefined || $.cookie("displayTxt") === "clock") {
+        document.getElementById('txt').innerHTML = h + ":" + m;
+        document.getElementById('smaller').innerHTML = ":" + s;
+        document.getElementById('small').innerHTML = o;
+    }
+    else if ($.cookie("displayTxt") === "age") {
+        $("#agetxt").show();
+        calcAge(ageMonth, ageDay, ageYear);
+    }
+    
     var t = setTimeout(function(){startTime()},500);
     checkCookie();
     checkHour();
@@ -309,4 +334,27 @@ function saveCustom(input) {
             break;
     }
 
+}
+
+var ageDay = 31;
+var ageMonth = 5;
+var ageYear = 1997;
+
+function calcAge(month, day, year) {
+    var today = new Date();
+    var presentDate = ((today.getMonth()+1)/12)+(today.getDate()/365.25);
+    var bday = (month/12)+(day/365.25);
+    var h = ((today.getHours())/8766);
+    var m = (today.getMinutes())/525960;
+    var s = (today.getSeconds())/31557600;
+    var ms = (today.getMilliseconds()+1)/31557600000;
+    var timeSince = (today.getFullYear() + presentDate + h + m + s + ms) - (year + bday);
+    var decimal = timeSince - Math.floor(timeSince);
+    document.getElementById('txt').innerHTML = (round(timeSince, 10)).toFixed(10) | 0;
+    document.getElementById('smaller').innerHTML = ((decimal.toFixed(10))).replace(/^0+/, '');
+    var t = setTimeout(function(){calcAge(month,day,year)},400);
+}
+
+function round(value, decimals) {
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 }
