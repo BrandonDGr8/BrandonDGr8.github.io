@@ -194,12 +194,14 @@ function startTime() {
         o = "PM";
     }
     if ($.cookie("displayTxt") === undefined || $.cookie("displayTxt") === "clock") {
+        $("#agetxt").hide();
         document.getElementById('txt').innerHTML = h + ":" + m;
         document.getElementById('smaller').innerHTML = ":" + s;
         document.getElementById('small').innerHTML = o;
     }
     else if ($.cookie("displayTxt") === "age") {
         $("#agetxt").show();
+        $("#small").hide();
         calcAge(ageMonth, ageDay, ageYear);
     }
     
