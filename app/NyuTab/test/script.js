@@ -194,12 +194,19 @@ function startTime() {
         o = "PM";
     }
     if ($.cookie("displayTxt") === undefined || $.cookie("displayTxt") === "clock") {
+        // $("#txt").empty();
+        // $("#smaller").empty();
+        // $("#small").empty();
         $("#agetxt").hide();
+        $("#small").show();
         document.getElementById('txt').innerHTML = h + ":" + m;
         document.getElementById('smaller').innerHTML = ":" + s;
         document.getElementById('small').innerHTML = o;
     }
     else if ($.cookie("displayTxt") === "age") {
+        // $("#txt").empty();
+        // $("#smaller").empty();
+        // $("#small").empty();
         $("#agetxt").show();
         $("#small").hide();
         calcAge(ageMonth, ageDay, ageYear);
@@ -354,7 +361,7 @@ function calcAge(month, day, year) {
     var decimal = timeSince - Math.floor(timeSince);
     document.getElementById('txt').innerHTML = (round(timeSince, 10)).toFixed(10) | 0;
     document.getElementById('smaller').innerHTML = ((decimal.toFixed(10))).replace(/^0+/, '');
-    var t = setTimeout(function(){calcAge(month,day,year)},400);
+    // var t = setTimeout(function(){calcAge(month,day,year)},400);
 }
 
 function round(value, decimals) {
