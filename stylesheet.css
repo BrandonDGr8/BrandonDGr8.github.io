@@ -7,7 +7,7 @@
     		position: fixed;
     		left: 0%;
     		top: 0%;
-            font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
+            font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
             z-index: 999;
             margin: 0%;
             border-bottom-left-radius: 0px;
@@ -134,7 +134,7 @@
         }
         .footerText {
             color: #ecf0f1;
-            font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
+            font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
         }
         .footerLeft {
             font-size: 0.8333333em;
@@ -345,15 +345,14 @@
 
 
         h1 {
-            font-size: 1.16em; /*14pt: 1.1666666em*/
+            font-size: 0.8em; /*14pt: 1.1666666em*/
             position: relative;
-            /*top: -5px;*/
-            font-family: 'Metrophobic','Open Sans',  helvetica, sans-serif;
+            font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
         }
         h2 {
             font-size: 0.8em;  /*10pt*/
             position: relative;
-            
+            font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
         }
         h3 {
             font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;

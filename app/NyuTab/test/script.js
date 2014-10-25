@@ -173,7 +173,7 @@ $(document).ready(function () {
 
 
     $(".displayAge").click(function () {
-        $(".afterAgeClick").show();
+        $(".afterAgeClick").show("fast");
         if ($.cookie('ifAgeSaved') == 'true') {
             $.cookie("displayTxt", "age", {expires:365});
         }
