@@ -1,22 +1,7 @@
-// var night = "img/mountains-night-1.jpg";
-// var day = "img/mountains-day-1.jpg";
-// var dawn = "img/mountains-dawn-1.jpg";
-// var sunset = "img/mountains-sunset-1.jpg";
 var night = "";
 var day = "";
 var dawn = "";
 var sunset = "";
-
-var cnight = "img/customerror.jpg";
-var cday = "img/customerror.jpg";
-var cdawn = "img/customerror.jpg";
-var csunset = "img/customerror.jpg";
-
-// $.cookie("dawncustom", "img/customerror.jpg", {expires:365});
-// $.cookie("daycustom", "img/customerror.jpg", {expires:365});
-// $.cookie("sunsetcustom", "img/customerror.jpg", {expires:365});
-// $.cookie("nightcustom", "img/customerror.jpg", {expires:365});
-
 
 $(document).ready(function () {
     $(".button").fadeTo("fast",0.2);
@@ -92,6 +77,23 @@ $(document).ready(function () {
     $(".options").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
+
+
+    $(".displayAge").mouseenter(function () {
+        $(this).addClass("optionHighlight");
+    });
+    $(".displayAge").mouseleave(function () {
+        $(this).removeClass("optionHighlight");
+    });
+    $(".displayClock").mouseenter(function () {
+        $(this).addClass("optionHighlight");
+    });
+    $(".displayClock").mouseleave(function () {
+        $(this).removeClass("optionHighlight");
+    });
+
+
+
     $(".button").click(function () {
         $(".list").fadeTo("fast",0.7);
     });
@@ -136,6 +138,9 @@ $(document).ready(function () {
     $(".close").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
+
+
+
     $(".mountains").click(function () {
         $.cookie("scene", "mountains", {expires:365});
     });
@@ -164,11 +169,19 @@ $(document).ready(function () {
         $.cookie("scene", "custom", {expires:365});
     });
 
+
+
     $(".displayAge").click(function () {
-        $.cookie("displayTxt", "age", {expires:365});
+        // $.cookie("displayTxt", "age", {expires:365});
+        // if ($.cookie('ifAgeSaved') == undefined) {
+            $(".afterAgeClick").show();
+        // }
+        // else if ($.cookie('ifAgeSaved') == 'true') {
+        //     $.cookie("displayTxt", "age", {expires:365});
+        // }
     });
     $(".displayClock").click(function () {
-        $.cookie("displayTxt", "clock", {expires:365});
+        // $.cookie("displayTxt", "clock", {expires:365});
     });
 });
 
@@ -194,9 +207,6 @@ function startTime() {
         o = "PM";
     }
     if ($.cookie("displayTxt") === undefined || $.cookie("displayTxt") === "clock") {
-        // $("#txt").empty();
-        // $("#smaller").empty();
-        // $("#small").empty();
         $("#agetxt").hide();
         $("#small").show();
         document.getElementById('txt').innerHTML = h + ":" + m;
@@ -204,12 +214,9 @@ function startTime() {
         document.getElementById('small').innerHTML = o;
     }
     else if ($.cookie("displayTxt") === "age") {
-        // $("#txt").empty();
-        // $("#smaller").empty();
-        // $("#small").empty();
         $("#agetxt").show();
         $("#small").hide();
-        calcAge(ageMonth, ageDay, ageYear);
+        calcAge($.cookie('bmonth'), $.cookie('bday'), $.cookie('byear'));
     }
     
     var t = setTimeout(function(){startTime()},500);
@@ -345,10 +352,6 @@ function saveCustom(input) {
 
 }
 
-var ageDay = 31;
-var ageMonth = 5;
-var ageYear = 1997;
-
 function calcAge(month, day, year) {
     var today = new Date();
     var presentDate = ((today.getMonth()+1)/12)+(today.getDate()/365.25);
@@ -364,6 +367,20 @@ function calcAge(month, day, year) {
     // var t = setTimeout(function(){calcAge(month,day,year)},400);
 }
 
+function saveAge(month, day, year) {
+    $.cookie('bmonth', month, {expires:365});
+    $.cookie('bday', day, {expires:365});
+    $.cookie('byear', year, {expires:365});
+    // $.cookie("ifAgeSaved", "true", {expires:365});
+}
+
 function round(value, decimals) {
     return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
 }
