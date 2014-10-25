@@ -62,9 +62,9 @@
             <h2>Options</h2>
             <div class="displayAge">
                 Display Age<br class="afterAgeClick">
-                <input type="text" name="monthinput" title="MM" style="color:#888;"value="MM" onfocus="inputFocus(this)" onblur="inputBlur(this)" class="monthinput afterAgeClick datebox"/>
-                <input type="text" name="dayinput" title="DD" style="color:#888;"value="DD" onfocus="inputFocus(this)" onblur="inputBlur(this)" class="dayinput afterAgeClick datebox"/>
-                <input type="text" name="yearinput" title="YYYY" style="color:#888;"value="YYYY" onfocus="inputFocus(this)" onblur="inputBlur(this)" class="yearinput afterAgeClick datebox"/><br>
+                <input type="text" name="monthinput" title="MM" style="color:#888;"value="MM" onfocus="inputFocus(this)" onblur="inputBlur(this)" id='monthinput' class="afterAgeClick datebox"/>
+                <input type="text" name="dayinput" title="DD" style="color:#888;"value="DD" onfocus="inputFocus(this)" onblur="inputBlur(this)" id='dayinput' class="afterAgeClick datebox"/>
+                <input type="text" name="yearinput" title="YYYY" style="color:#888;"value="YYYY" onfocus="inputFocus(this)" onblur="inputBlur(this)" id='yearinput' class="afterAgeClick datebox"/><br>
                 <input name="saveAge" onclick="saveAge('monthinput', 'dayinput', 'yearinput')" type="button" value="Save" class="saveAge afterAgeClick"/>
             </div>
             <div class="displayClock">Display Clock</div>

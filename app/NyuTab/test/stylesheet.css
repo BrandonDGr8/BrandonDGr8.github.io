@@ -335,13 +335,13 @@ p {
     cursor: pointer;
 }
 
-.monthinput, .dayinput {
+#monthinput, #dayinput {
     font-family: "Open Sans", helvetica;
     width: 15%;
     margin-top: 3%;
 }
 
-.yearinput {
+#yearinput {
     font-family: "Open Sans", helvetica;
     width: 30%;
     margin-top: 3%;
