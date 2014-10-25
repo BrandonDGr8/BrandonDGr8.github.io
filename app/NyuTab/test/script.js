@@ -181,7 +181,7 @@ $(document).ready(function () {
         // }
     });
     $(".displayClock").click(function () {
-        // $.cookie("displayTxt", "clock", {expires:365});
+        $.cookie("displayTxt", "clock", {expires:365});
     });
 });
 
@@ -372,6 +372,7 @@ function saveAge(month, day, year) {
     $.cookie('bday', day, {expires:365});
     $.cookie('byear', year, {expires:365});
     // $.cookie("ifAgeSaved", "true", {expires:365});
+    $.cookie("displayTxt", "age", {expires:365});
 }
 
 function round(value, decimals) {
