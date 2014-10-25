@@ -1,27 +1,9 @@
-// var night = "img/mountains-night-1.jpg";
-// var day = "img/mountains-day-1.jpg";
-// var dawn = "img/mountains-dawn-1.jpg";
-// var sunset = "img/mountains-sunset-1.jpg";
 var night = "";
 var day = "";
 var dawn = "";
 var sunset = "";
 
-var cnight = "img/customerror.jpg";
-var cday = "img/customerror.jpg";
-var cdawn = "img/customerror.jpg";
-var csunset = "img/customerror.jpg";
-
-// $.cookie("dawncustom", "img/customerror.jpg", {expires:365});
-// $.cookie("daycustom", "img/customerror.jpg", {expires:365});
-// $.cookie("sunsetcustom", "img/customerror.jpg", {expires:365});
-// $.cookie("nightcustom", "img/customerror.jpg", {expires:365});
-
-
 $(document).ready(function () {
-    $(".list").hide();
-    $(".description").hide();
-    $(".custommenu").hide();
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
         $(this).fadeTo("fast",0.5);
@@ -89,6 +71,29 @@ $(document).ready(function () {
     $(".editcustom").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
+    $(".options").mouseenter(function () {
+        $(this).fadeTo("fast",0.6);
+    });
+    $(".options").mouseleave(function () {
+        $(this).fadeTo("fast",1);
+    });
+
+
+    $(".displayAge").mouseenter(function () {
+        $(this).addClass("optionHighlight");
+    });
+    $(".displayAge").mouseleave(function () {
+        $(this).removeClass("optionHighlight");
+    });
+    $(".displayClock").mouseenter(function () {
+        $(this).addClass("optionHighlight");
+    });
+    $(".displayClock").mouseleave(function () {
+        $(this).removeClass("optionHighlight");
+    });
+
+
+
     $(".button").click(function () {
         $(".list").fadeTo("fast",0.7);
     });
@@ -98,6 +103,7 @@ $(document).ready(function () {
     $(".i").click(function () {
         $(".description").fadeTo("fast", 0.7);
         $(".custommenu").hide("fast");
+        $(".optionsmenu").hide("fast");
     });
     $(".i").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -108,6 +114,12 @@ $(document).ready(function () {
     $(".editcustom").click(function () {
         $(".custommenu").fadeTo("fast", 0.7);
         $(".description").hide("fast");
+        $(".optionsmenu").hide("fast");
+    });
+    $(".options").click(function () {
+        $(".optionsmenu").fadeTo("fast", 0.7);
+        $(".description").hide("fast");
+        $(".custommenu").hide("fast");
     });
     $(".i").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -118,6 +130,8 @@ $(document).ready(function () {
     $(".close").click(function () {
         $(".description").hide("fast");
         $(".custommenu").hide("fast");
+        $(".optionsmenu").hide("fast");
+        $(".afterAgeClick").hide("fast");
     });
     $(".close").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -125,6 +139,9 @@ $(document).ready(function () {
     $(".close").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
+
+
+
     $(".mountains").click(function () {
         $.cookie("scene", "mountains", {expires:365});
     });
@@ -152,6 +169,19 @@ $(document).ready(function () {
     $(".custom").click(function () {
         $.cookie("scene", "custom", {expires:365});
     });
+
+
+
+    $(".displayAge").click(function () {
+        $(".afterAgeClick").show("fast");
+        if ($.cookie('ifAgeSaved') == 'true') {
+            $.cookie("displayTxt", "age", {expires:365});
+        }
+    });
+    $(".displayClock").click(function () {
+        $.cookie("displayTxt", "clock", {expires:365});
+        $(".afterAgeClick").hide("fast");
+    });
 });
 
 
@@ -175,9 +205,25 @@ function startTime() {
         }
         o = "PM";
     }
-    document.getElementById('txt').innerHTML = h + ":" + m;
-    document.getElementById('smaller').innerHTML = ":" + s;
-    document.getElementById('small').innerHTML = o;
+    if ($.cookie("displayTxt") === undefined || $.cookie("displayTxt") === "clock") {
+        $("#agetxt").hide();
+        $("#small").show();
+        document.getElementById('txt').innerHTML = h + ":" + m;
+        document.getElementById('smaller').innerHTML = ":" + s;
+        document.getElementById('small').innerHTML = o;
+    }
+    else if ($.cookie("displayTxt") === "age") {
+        $("#agetxt").show();
+        $("#small").hide();
+        var mo = parseInt($.cookie('bmonth'));
+        var dy = parseInt($.cookie('bday'));
+        var yr = parseInt($.cookie('byear'));
+        console.log(mo);
+        console.log(dy);
+        console.log(yr);
+        calcAge(mo, dy, yr);
+    }
+    
     var t = setTimeout(function(){startTime()},500);
     checkCookie();
     checkHour();
@@ -309,4 +355,41 @@ function saveCustom(input) {
             break;
     }
 
+}
+
+function calcAge(month, day, year) {
+    var today = new Date();
+    var presentDate = ((today.getMonth()+1)/12)+(today.getDate()/365.25);
+    var bday = (month/12)+(day/365.25);
+    var h = ((today.getHours())/8766);
+    var m = (today.getMinutes())/525960;
+    var s = (today.getSeconds())/31557600;
+    var ms = (today.getMilliseconds()+1)/31557600000;
+    var timeSince = (today.getFullYear() + presentDate + h + m + s + ms) - (year + bday);
+    var decimal = timeSince - Math.floor(timeSince);
+    document.getElementById('txt').innerHTML = (round(timeSince, 10)).toFixed(10) | 0;
+    document.getElementById('smaller').innerHTML = ((decimal.toFixed(10))).replace(/^0+/, '');
+    // var t = setTimeout(function(){calcAge(month,day,year)},400);
+}
+
+function saveAge(month, day, year) {
+    var m = document.getElementById(month).value;
+    var d = document.getElementById(day).value;
+    var y = document.getElementById(year).value;
+    $.cookie('bmonth', m, {expires:365});
+    $.cookie('bday', d, {expires:365});
+    $.cookie('byear', y, {expires:365});
+    $.cookie("ifAgeSaved", "true", {expires:365});
+    $.cookie("displayTxt", "age", {expires:365});
+}
+
+function round(value, decimals) {
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
 }
