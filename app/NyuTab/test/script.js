@@ -172,7 +172,6 @@ $(document).ready(function () {
 
 
     $(".displayAge").click(function () {
-        // $.cookie("displayTxt", "age", {expires:365});
         // if ($.cookie('ifAgeSaved') == undefined) {
             $(".afterAgeClick").show();
         // }
@@ -216,7 +215,10 @@ function startTime() {
     else if ($.cookie("displayTxt") === "age") {
         $("#agetxt").show();
         $("#small").hide();
-        calcAge($.cookie('bmonth'), $.cookie('bday'), $.cookie('byear'));
+        var m = $.cookie('bmonth');
+        var d = $.cookie('bday');
+        var y = $.cookie('byear');
+        calcAge(m, d, y);
     }
     
     var t = setTimeout(function(){startTime()},500);
@@ -372,6 +374,9 @@ function saveAge(month, day, year) {
     $.cookie('bday', day, {expires:365});
     $.cookie('byear', year, {expires:365});
     // $.cookie("ifAgeSaved", "true", {expires:365});
+    console.log($.cookie('bmonth'));
+    console.log($.cookie('bday'));
+    console.log($.cookie('byear'));
     $.cookie("displayTxt", "age", {expires:365});
 }
 
