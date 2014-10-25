@@ -218,7 +218,7 @@ function startTime() {
         var mo = $.cookie('bmonth');
         var dy = $.cookie('bday');
         var yr = $.cookie('byear');
-        calcAge(mo, dy, yr);
+        calcAge(5, 31, 1997);
     }
     
     var t = setTimeout(function(){startTime()},500);
@@ -364,7 +364,7 @@ function calcAge(month, day, year) {
     var ms = (today.getMilliseconds()+1)/31557600000;
     var timeSince = (today.getFullYear() + presentDate + h + m + s + ms) - (year + bday);
     var decimal = timeSince - Math.floor(timeSince);
-    document.getElementById('txt').innerHTML = timeSince | 0;
+    document.getElementById('txt').innerHTML = (round(timeSince, 10)).toFixed(10) | 0;
     document.getElementById('smaller').innerHTML = ((decimal.toFixed(10))).replace(/^0+/, '');
     // var t = setTimeout(function(){calcAge(month,day,year)},400);
 }
