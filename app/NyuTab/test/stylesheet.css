@@ -20,19 +20,23 @@ p {
 
 #txt {
     font-size: 6em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #smaller {
     font-size: 3em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #small {
     font-size: 4.5em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #agetxt {
     font-size: 1.5em;
     display: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #background {
