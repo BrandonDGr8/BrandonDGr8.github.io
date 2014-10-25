@@ -218,7 +218,13 @@ function startTime() {
         var mo = $.cookie('bmonth');
         var dy = $.cookie('bday');
         var yr = $.cookie('byear');
+        console.log(mo);
+        console.log(dy);
+        console.log(yr);
         calcAge(mo, dy, yr);
+        console.log(mo);
+        console.log(dy);
+        console.log(yr);
     }
     
     var t = setTimeout(function(){startTime()},500);
@@ -377,9 +383,6 @@ function saveAge(month, day, year) {
     $.cookie('bday', d, {expires:365});
     $.cookie('byear', y, {expires:365});
     // $.cookie("ifAgeSaved", "true", {expires:365});
-    console.log($.cookie('bmonth'));
-    console.log($.cookie('bday'));
-    console.log($.cookie('byear'));
     $.cookie("displayTxt", "age", {expires:365});
 }
 
