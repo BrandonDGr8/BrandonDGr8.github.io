@@ -218,7 +218,7 @@ function startTime() {
         var mo = $.cookie('bmonth');
         var dy = $.cookie('bday');
         var yr = $.cookie('byear');
-        calcAge(5, 31, 1997);
+        calcAge(mo, dy, yr);
     }
     
     var t = setTimeout(function(){startTime()},500);
