@@ -131,6 +131,7 @@ $(document).ready(function () {
         $(".description").hide("fast");
         $(".custommenu").hide("fast");
         $(".optionsmenu").hide("fast");
+        $(".afterAgeClick").hide("fast");
     });
     $(".close").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -179,6 +180,7 @@ $(document).ready(function () {
     });
     $(".displayClock").click(function () {
         $.cookie("displayTxt", "clock", {expires:365});
+        $(".afterAgeClick").hide("fast");
     });
 });
 

@@ -350,7 +350,7 @@ p {
 .saveAge {
     font-family: "Open Sans", helvetica;
     margin-top: 3%;
-
+    cursor: pointer;
 }
 
 .afterAgeClick {
