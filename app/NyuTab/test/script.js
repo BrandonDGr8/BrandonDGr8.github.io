@@ -172,12 +172,10 @@ $(document).ready(function () {
 
 
     $(".displayAge").click(function () {
-        // if ($.cookie('ifAgeSaved') == undefined) {
-            $(".afterAgeClick").show();
-        // }
-        // else if ($.cookie('ifAgeSaved') == 'true') {
-        //     $.cookie("displayTxt", "age", {expires:365});
-        // }
+        $(".afterAgeClick").show();
+        if ($.cookie('ifAgeSaved') == 'true') {
+            $.cookie("displayTxt", "age", {expires:365});
+        }
     });
     $(".displayClock").click(function () {
         $.cookie("displayTxt", "clock", {expires:365});
@@ -379,7 +377,7 @@ function saveAge(month, day, year) {
     $.cookie('bmonth', m, {expires:365});
     $.cookie('bday', d, {expires:365});
     $.cookie('byear', y, {expires:365});
-    // $.cookie("ifAgeSaved", "true", {expires:365});
+    $.cookie("ifAgeSaved", "true", {expires:365});
     $.cookie("displayTxt", "age", {expires:365});
 }
 
