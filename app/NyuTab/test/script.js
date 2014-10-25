@@ -215,16 +215,13 @@ function startTime() {
     else if ($.cookie("displayTxt") === "age") {
         $("#agetxt").show();
         $("#small").hide();
-        var mo = $.cookie('bmonth');
-        var dy = $.cookie('bday');
-        var yr = $.cookie('byear');
+        var mo = parseInt($.cookie('bmonth'));
+        var dy = parseInt($.cookie('bday'));
+        var yr = parseInt($.cookie('byear'));
         console.log(mo);
         console.log(dy);
         console.log(yr);
         calcAge(mo, dy, yr);
-        console.log(mo);
-        console.log(dy);
-        console.log(yr);
     }
     
     var t = setTimeout(function(){startTime()},500);
