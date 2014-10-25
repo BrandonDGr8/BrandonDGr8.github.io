@@ -370,9 +370,12 @@ function calcAge(month, day, year) {
 }
 
 function saveAge(month, day, year) {
-    $.cookie('bmonth', month, {expires:365});
-    $.cookie('bday', day, {expires:365});
-    $.cookie('byear', year, {expires:365});
+    var m = document.getElementById(month).value;
+    var d = document.getElementById(day).value;
+    var y = document.getElementById(year).value;
+    $.cookie('bmonth', m, {expires:365});
+    $.cookie('bday', d, {expires:365});
+    $.cookie('byear', y, {expires:365});
     // $.cookie("ifAgeSaved", "true", {expires:365});
     console.log($.cookie('bmonth'));
     console.log($.cookie('bday'));
