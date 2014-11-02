@@ -85,6 +85,7 @@ a {
     left: 0%;
     background-color: #FFFFFF;
     position: relative;
+    border: 1px solid black;
 }
 
 .mid {
@@ -96,6 +97,7 @@ a {
     left: 0%;
     background-color: #FFFFFF;
     position: relative;
+    border: 1px solid black;
 }
 
 .bot {
@@ -107,6 +109,7 @@ a {
     left: 0%;
     background-color: #FFFFFF;
     position: relative;
+    border: 1px solid black;
 }
 
 .list {
