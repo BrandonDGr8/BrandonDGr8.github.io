@@ -276,17 +276,19 @@ p {
     text-align: center;
 }
 
-.savebutton {
-    /*font-size: 1em;*/
+.savebutton, .saveAge {
+    font-size: 1.8em;
     cursor: pointer;
     font-family: "Open Sans", helvetica;
     width: auto;
+    height: auto;
 }
 
 .textbox {
-    /*font-size: 1em;*/
+    font-size: 1.8em;
     font-family: "Open Sans", helvetica;
     width: 60%;
+    height: 70px;
 }
 
 .displayAge {
@@ -323,12 +325,16 @@ p {
     font-family: "Open Sans", helvetica;
     width: 15%;
     margin-top: 3%;
+    height: 70px;
+    font-size: 1.8em;
 }
 
 #yearinput {
     font-family: "Open Sans", helvetica;
     width: 30%;
     margin-top: 3%;
+    height: 70px;
+    font-size: 1.8em;
 }
 
 .saveAge {
