@@ -24,7 +24,6 @@
                 <p class="desert">Desert</p><br>
                 <p class="earth">Earth</p><br>
                 <p class="custom">Custom</p><br>
-                <p class="editcustom">Edit Custom</p><br>
                 <p class="options">Options</p><br>
                 <div class="i">i</div>   
         </div>
@@ -37,34 +36,11 @@
             If you use and enjoy Nyu Tab, <a class="link" href="https://www.facebook.com/YourNyuTab">like it on Facebook</a> for updates!
 
         </div>
-        <div class="custommenu">
-            <div class="close">X</div>
-            <p class="customtxt">Enter custom image URLs:</p>
-            <div class="cdawn">Dawn:
-                <input name="dawnbox" id="dawnbox" type="text" class="textbox"/>
-                <input name="buttonExecute" onclick="saveCustom('dawnbox')" type="button" value="Save" class="savebutton"/>
-                
-            </div>
-            <div class="cday">Day:
-                <input name="daybox" id="daybox" type="text" class="textbox"/>
-                <input name="buttonExecute" onclick="saveCustom('daybox')" type="button" value="Save" class="savebutton"/>
-                
-            </div>
-            <div class="csunset">Sunset:
-                <input name="sunsetbox" id="sunsetbox" type="text" class="textbox"/>
-                <input name="buttonExecute" onclick="saveCustom('sunsetbox')" type="button" value="Save" class="savebutton"/>
-                
-            </div>
-            <div class="cnight">Night:
-                <input name="nightbox" id="nightbox" type="text" class="textbox"/>
-                <input name="buttonExecute" onclick="saveCustom('nightbox')" type="button" value="Save" class="savebutton"/>
-                
-            </div>
-            <p class="customtxt">Make sure the link ends in an image extension (.jpg, .png, etc.)! Some images may take some time to load. If your image does not appear, there may be something wrong with the link you provided or try refreshing. If the problem persists and you have tried multiple URLs, contact me at <a class="link" href="http://yucode.org/">yucode.org</a>.</p>
-        </div>
+        
         <div class="optionsmenu">
             <div class="close">X</div>
-            <h2>Options</h2>
+            <h2>Options:</h2>
+            <h3>Display:</h3>
             <div class="displayAge">
                 Display Age<br class="afterAgeClick">
                 <input type="text" name="monthinput" title="MM" style="color:#888;"value="MM" onfocus="inputFocus(this)" onblur="inputBlur(this)" id='monthinput' class="afterAgeClick datebox"/>
@@ -73,6 +49,30 @@
                 <input name="saveAge" onclick="saveAge('monthinput', 'dayinput', 'yearinput')" type="button" value="Save" class="saveAge afterAgeClick"/>
             </div>
             <div class="displayClock">Display Clock</div>
+            <br><br>
+            <h3>Edit Custom Image URLs:</h3>
+            <div class="cdawn"><p class="customtxt">Dawn:</p><br>
+                <input name="dawnbox" id="dawnbox" type="text" class="textbox"/>
+                <input name="buttonExecute" onclick="saveCustom('dawnbox')" type="button" value="Save" class="savebutton"/>
+                
+            </div>
+            <div class="cday"><p class="customtxt">Day:</p><br>
+                <input name="daybox" id="daybox" type="text" class="textbox"/>
+                <input name="buttonExecute" onclick="saveCustom('daybox')" type="button" value="Save" class="savebutton"/>
+                
+            </div>
+            <div class="csunset"><p class="customtxt">Sunset:</p><br>
+                <input name="sunsetbox" id="sunsetbox" type="text" class="textbox"/>
+                <input name="buttonExecute" onclick="saveCustom('sunsetbox')" type="button" value="Save" class="savebutton"/>
+                
+            </div>
+            <div class="cnight"><p class="customtxt">Night:</p><br>
+                <input name="nightbox" id="nightbox" type="text" class="textbox"/>
+                <input name="buttonExecute" onclick="saveCustom('nightbox')" type="button" value="Save" class="savebutton"/>
+                
+            </div>
+            <br>
+            <p class="customtxt">Make sure the link ends in an image extension (.jpg, .png, etc.)! Some images may take some time to load. If your image does not appear, try refreshing or there may be something wrong with the link you provided.</p>
         </div>
         <div class="time">
             <p id="agetxt">Age</p><p id="txt"></p><p id="smaller"></p><p id="small"></p>

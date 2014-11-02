@@ -65,12 +65,6 @@ $(document).ready(function () {
     $(".custom").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
-    $(".editcustom").mouseenter(function () {
-        $(this).fadeTo("fast",0.6);
-    });
-    $(".editcustom").mouseleave(function () {
-        $(this).fadeTo("fast",1);
-    });
     $(".options").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
     });
@@ -102,7 +96,6 @@ $(document).ready(function () {
     });
     $(".i").click(function () {
         $(".description").fadeTo("fast", 0.7);
-        $(".custommenu").hide("fast");
         $(".optionsmenu").hide("fast");
     });
     $(".i").mouseenter(function () {
@@ -111,15 +104,9 @@ $(document).ready(function () {
     $(".i").mouseleave(function () {
         $(this).fadeTo("fast",1);
     });
-    $(".editcustom").click(function () {
-        $(".custommenu").fadeTo("fast", 0.7);
-        $(".description").hide("fast");
-        $(".optionsmenu").hide("fast");
-    });
     $(".options").click(function () {
         $(".optionsmenu").fadeTo("fast", 0.7);
         $(".description").hide("fast");
-        $(".custommenu").hide("fast");
     });
     $(".i").mouseenter(function () {
         $(this).fadeTo("fast",0.6);
@@ -129,7 +116,6 @@ $(document).ready(function () {
     });
     $(".close").click(function () {
         $(".description").hide("fast");
-        $(".custommenu").hide("fast");
         $(".optionsmenu").hide("fast");
         $(".afterAgeClick").hide("fast");
     });
