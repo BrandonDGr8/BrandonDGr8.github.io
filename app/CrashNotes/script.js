@@ -9,8 +9,8 @@ function Note(text, title) {
 }
 
 //note array
-var notes_array = [];
-$.cookie("notes_array", JSON.stringify(notes_array));
+// var notes_array = [];
+// $.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 
 
 //saves notes and title to a new note object
@@ -20,7 +20,7 @@ function saveNote(note, title) {
 	var o = new Note(n, t);
 	var notes_array = $.parseJSON($.cookie("notes_array"));
 	notes_array.push(o);
-	$.cookie("notes_array", JSON.stringify(notes_array));
+	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	//save note to cookie
 	//save title to corresponding cookie
 	// console.log(notes_array);
@@ -34,7 +34,7 @@ function deleteNote() {
 	if (index > -1) {
 		notes_array.splice(index, 1);
 	}
-	$.cookie("notes_array", JSON.stringify(notes_array));
+	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	$(".new_text").remove();
 	loadTitlesToDropdown();
 }
@@ -45,7 +45,7 @@ function loadTitlesToDropdown() {
 	for (var i = notes_array.length - 1; i >= 0; i--) {
 		$('select').append("<option class='titles' value=" + i + ">" + notes_array[i].title + "</option>");
 	};
-	$.cookie("notes_array", JSON.stringify(notes_array));
+	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	// var t = setTimeout(function(){loadTitlesToDropdown()},1000);
 }
 
@@ -55,7 +55,7 @@ $("select").click(function () {
 	console.log("title clicked")
 	var notes_array = $.parseJSON($.cookie("notes_array"));
 	current_note = notes_array[$(this).val()];
-	$.cookie("notes_array", JSON.stringify(notes_array));
+	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	updateViewedText();
 });
 
@@ -65,7 +65,7 @@ function updateViewedText() {
 		var notes_array = $.parseJSON($.cookie("notes_array"));
 		$('.loaded_text').append("<h2 class='header_title new_text'>" + current_note.title + "</h2>");
 		$('.loaded_text').append("<p class='viewed_text new_text'>" + current_note.text + "</p>");
-		$.cookie("notes_array", JSON.stringify(notes_array));
+		$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	};
 };
 
