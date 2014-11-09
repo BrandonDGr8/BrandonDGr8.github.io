@@ -46,7 +46,7 @@ function loadTitlesToDropdown() {
 		$('select').append("<option class='titles' value=" + i + ">" + notes_array[i].title + "</option>");
 	};
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
-	// var t = setTimeout(function(){loadTitlesToDropdown()},1000);
+	var t = setTimeout(function(){loadTitlesToDropdown()},1000);
 }
 
 var current_note = '';
