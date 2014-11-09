@@ -31,9 +31,7 @@ function saveNote(note, title) {
 function deleteNote() {
 	var notes_array = $.parseJSON($.cookie("notes_array"));
 	var index = notes_array.indexOf(current_note);
-	if (index > -1) {
-		notes_array.splice(index, 1);
-	}
+	notes_array.splice(indexValueOfArray, index);
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	$(".new_text").remove();
 	loadTitlesToDropdown();
