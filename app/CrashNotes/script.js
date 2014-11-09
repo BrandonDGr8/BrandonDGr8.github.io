@@ -9,13 +9,13 @@ function Note(text, title) {
 }
 
 //note array
-// var notes_array = [];
+var notes_array = [];
 // $.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 
 
 //saves notes and title to a new note object
 function saveNote(note, title) {
-	var notes_array = $.parseJSON($.cookie("n_array"));
+	notes_array = $.parseJSON($.cookie("n_array"));
 	var n = document.getElementById(note).value;
 	var t = document.getElementById(title).value;
 	var o = new Note(n, t);
@@ -30,7 +30,7 @@ function saveNote(note, title) {
 
 
 function loadTitlesToDropdown() {
-	var notes_array = $.parseJSON($.cookie("n_array"));
+	notes_array = $.parseJSON($.cookie("n_array"));
 	$(".titles").remove();
 	for (var i = 0; i < notes_array.length; i++) {
 		$('select').append("<option class='titles' value=" + i + ">" + notes_array[i].title + "</option>");
@@ -42,7 +42,7 @@ function loadTitlesToDropdown() {
 var current_note = '';
 
 function deleteNote() {
-	var notes_array = $.parseJSON($.cookie("n_array"));
+	notes_array = $.parseJSON($.cookie("n_array"));
 	// var index = notes_array.indexOf(current_note);
 	notes_array.splice(notes_array.indexOf(current_note), 1);
 	$.cookie("n_array", JSON.stringify(notes_array), {expire:365});
@@ -51,7 +51,7 @@ function deleteNote() {
 }
 
 $("select").click(function () {
-	var notes_array = $.parseJSON($.cookie("n_array"));
+	notes_array = $.parseJSON($.cookie("n_array"));
 	current_note = notes_array[$(this).val()];
 	$.cookie("n_array", JSON.stringify(notes_array), {expire:365});
 	updateViewedText();
@@ -60,7 +60,7 @@ $("select").click(function () {
 function updateViewedText() {
 	if (current_note !== null) {
 		$(".new_text").remove();
-		var notes_array = $.parseJSON($.cookie("n_array"));
+		notes_array = $.parseJSON($.cookie("n_array"));
 		$('.loaded_text').append("<h2 class='header_title new_text'>" + current_note.title + "</h2>");
 		$('.loaded_text').append("<p class='viewed_text new_text'>" + current_note.text + "</p>");
 		$.cookie("n_array", JSON.stringify(notes_array), {expire:365});
