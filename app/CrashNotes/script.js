@@ -40,7 +40,7 @@ function deleteNote() {
 function loadTitlesToDropdown() {
 	$(".titles").remove();
 	var notes_array = $.parseJSON($.cookie("notes_array"));
-	for (var i = notes_array.length - 1; i >= 0; i--) {
+	for (var i = 0; i < notes_array.length; i++) {
 		$('select').append("<option class='titles' value=" + i + ">" + notes_array[i].title + "</option>");
 	};
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
