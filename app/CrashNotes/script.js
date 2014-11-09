@@ -53,7 +53,6 @@ $("select").click(function () {
 
 function deleteNote() {
 	var notes_array = $.parseJSON($.cookie("notes_array"));
-	current_note = notes_array[$(this).val()];
 	console.log(current_note);
 	var indx = notes_array.indexOf(current_note);
 	console.log(ind);
