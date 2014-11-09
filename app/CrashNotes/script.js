@@ -6,7 +6,6 @@ function Note(text, title) {
 
 //note array
 var notes_array = [];
-$.cookie("notes_array", JSON.stringify(notes_array));
 
 
 //saves notes and title to a new note object
@@ -14,9 +13,7 @@ function saveNote(note, title) {
 	var n = document.getElementById(note).value;
 	var t = document.getElementById(title).value;
 	var o = new Note(n, t);
-	var notes_array = $.parseJSON($.cookie("notes_array"));
 	notes_array.push(o);
-	$.cookie("notes_array", JSON.stringify(notes_array));
 	//save note to cookie
 	//save title to corresponding cookie
 	// console.log(notes_array);
