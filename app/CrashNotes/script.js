@@ -9,8 +9,8 @@ function Note(text, title) {
 }
 
 //note array
-// var notes_array = [];
-// $.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
+var notes_array = [];
+$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 
 
 //saves notes and title to a new note object
