@@ -31,7 +31,7 @@ function saveNote(note, title) {
 function deleteNote() {
 	var notes_array = $.parseJSON($.cookie("notes_array"));
 	var index = notes_array.indexOf(current_note);
-	notes_array.splice(indexValueOfArray, index);
+	notes_array.splice(index, 1);
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	$(".new_text").remove();
 	loadTitlesToDropdown();
@@ -44,7 +44,7 @@ function loadTitlesToDropdown() {
 		$('select').append("<option class='titles' value=" + i + ">" + notes_array[i].title + "</option>");
 	};
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
-	var t = setTimeout(function(){loadTitlesToDropdown()},1000);
+	var t = setTimeout(function(){loadTitlesToDropdown()},3000);
 }
 
 var current_note = '';
