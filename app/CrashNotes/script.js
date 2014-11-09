@@ -18,7 +18,6 @@ function saveNote(note, title) {
 	var n = document.getElementById(note).value;
 	var t = document.getElementById(title).value;
 	var o = new Note(n, t);
-	$.cookie("notes_array", JSON.stringify(notes_array));
 	var notes_array = $.parseJSON($.cookie("notes_array"));
 	notes_array.push(o);
 	$.cookie("notes_array", JSON.stringify(notes_array));
