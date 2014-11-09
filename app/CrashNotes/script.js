@@ -53,10 +53,8 @@ $("select").click(function () {
 
 function deleteNote() {
 	var notes_array = $.parseJSON($.cookie("notes_array"));
-	// var indx = notes_array.indexOf(current_note);
-	// notes_array.splice(indx, 1);
-	console.log(notes_array);
-	notes_array.remove(current_note);
+	var indx = notes_array.indexOf(current_note);
+	notes_array.splice(indx, 1);
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	$(".new_text").remove();
 	loadTitlesToDropdown();
@@ -85,16 +83,6 @@ function inputBlur(i){
     if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
 };
 
-// Removes an element from an array.
-// String value: the value to search and remove.
-// return: an array with the removed element; false otherwise.
-Array.prototype.remove = function(value) {
-var idx = this.indexOf(value);
-if (idx != -1) {
-    return this.splice(idx, 1); // The second parameter is the number of elements to remove.
-}
-return false;
-}
 
 
 //saveNote will save note and title to a corresponding cookie. (make object?)
