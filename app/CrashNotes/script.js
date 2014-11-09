@@ -10,7 +10,9 @@ function Note(text, title) {
 
 //note array
 var notes_array = [];
-$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
+if ($.cookie('notes_array') == undefined) {
+	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
+};
 
 
 //saves notes and title to a new note object
@@ -30,8 +32,8 @@ function saveNote(note, title) {
 
 function deleteNote() {
 	var notes_array = $.parseJSON($.cookie("notes_array"));
-	var index = notes_array.indexOf(current_note);
-	notes_array.splice(index, 1);
+	var ind = notes_array.indexOf(current_note);
+	notes_array.splice(ind, 1);
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	$(".new_text").remove();
 	loadTitlesToDropdown();
