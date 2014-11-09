@@ -53,9 +53,7 @@ $("select").click(function () {
 
 function deleteNote() {
 	var notes_array = $.parseJSON($.cookie("notes_array"));
-	console.log(current_note);
 	var indx = notes_array.indexOf(current_note);
-	console.log(ind);
 	notes_array.splice(indx, 1);
 	$.cookie("notes_array", JSON.stringify(notes_array), {expire:365});
 	$(".new_text").remove();
