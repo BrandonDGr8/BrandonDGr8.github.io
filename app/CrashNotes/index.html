@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CrashNotes</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+		<div class="background">
+			<img src="img/notebook.jpg" alt="" class="stretch">
+		</div>
+
+		<div class="header">
+			<h1>CrashNotes</h1>
+		</div>
+
+
+
+		<div class="left">
+			<!-- <select name="" id="" class="edit">
+				<option value="">Edit Notes</option>
+			</select> -->
+			<textarea id="edit_textbox" class="edit_textbox" name="edit_textbox" cols="70" rows="50"></textarea>
+			<input type="text" id="title_textbox" class="title_textbox" name="title_textbox" title="Note Title" style="color:#888;" onfocus="inputFocus(this)" onblur="inputBlur(this)" value="Note Title">
+			<input type="button" class="save_button" value="Save" onclick="saveNote('edit_textbox', 'title_textbox')">
+		</div>
+
+
+
+
+		<div class="right">
+			<select name="" id="" class="view">
+				<option value="">View Notes</option>
+			</select>
+			<div class="loaded_text">
+				<!-- <h2 class="header_title"></h2> -->
+				<!-- <p class="viewed_text"></p> -->
+			</div>
+			<input type="button" class="delete_button" value="Delete" onclick="deleteNote()">
+		</div>
+
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+            <script type="text/javascript" src="jquery-cookies/jquery.cookie.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,117 @@
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.background {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -999;
+}
+
+.stretch {
+	height: 100%;
+	width: 100%;
+}
+
+.header {
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-family: 'Montserrat', helvetica;
+	font-size: 1.5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.left {
+	float: left;
+	position: absolute;
+	width: 50%;
+	height: 80%;
+	top: 100px;
+	left: 0;
+	font-family: 'Open Sans', helvetica;
+}
+
+.edit {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.edit_textbox {
+	position: absolute;
+	top: 35px;
+	width: 90%;
+	height: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+	overflow: auto;
+	font-size: 1.1em;
+	overflow: auto;
+}
+
+.title_textbox {
+	position: absolute;
+	left: 5%;
+	top: 92%;
+	width: 70%;
+	font-size: 1.1em;
+}
+
+.save_button {
+	position: absolute;
+	right: 5%;
+	top: 92%;
+}
+
+.right {
+	float: right;
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	top: 100px;
+	right: 0;
+	font-family: 'Open Sans', helvetica;
+}
+
+.view {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+.loaded_text {
+	position: absolute;
+	top: 35px;
+	right: 10px;
+	width: 90%;
+	height: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+	overflow: auto;
+	padding: 2%;
+	color: black;
+}
+
+.viewed_text {
+	font-size: 1.1em;
+}
+
+.delete_button {
+	position: absolute;
+	right: 5%;
+	top: 92%;
+}
