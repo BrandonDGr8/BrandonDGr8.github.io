@@ -17,7 +17,7 @@
 
 h1 {
 	font-family: "Arvo", sans-serif;
-	font-size: 6em;
+	font-size: 5em;
 }
 
 .dice {
@@ -39,14 +39,31 @@ h1 {
 	display: inline-block;
 }
 
-#result:after {
-	content: "!";
+#result:before {
+	content: "Total Result: ";
 }
 
 #add {
-	height: 50px;
-	width: 50px;
+	height: 25px;
+	width: 25px;
 	opacity: 0.5;
 	cursor: pointer;
 	/*clear: both;*/
+}
+
+#minus {
+	height: 25px;
+	width: 25px;
+	opacity: 0.5;
+	cursor: pointer;
+	/*clear: both;*/
+}
+
+.total {
+	font-family: "Avro", sans-serif;
+	font-size: 1em;
+}
+
+.total:before {
+	content: "Total Die: "
 }

@@ -56,5 +56,14 @@ $(document).ready(function () {
 		var newDice = $("<div class='dice'><img src='img/dice1.png' alt='' class='resultDice'></div>");
     	newDice.appendTo (".dices");
     	console.log("added");
+    	$(".total").html(totalDie);
+	});
+	$(document).on('click','#minus',function() {
+		if (totalDie > 1) {
+			totalDie--;
+	    	$(".dice:last").remove();
+	    	console.log("removed");
+		}
+    	$(".total").html(totalDie);
 	});
 });
