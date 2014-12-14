@@ -9,28 +9,28 @@ var interval = setInterval(function() {
         $(".projects_button").removeClass("underline");
         $(".hire_button").removeClass("underline");
         $(".contact_button").removeClass("underline");
-        interval();
+        // interval();
     }
     else if ($(window).scrollTop() >= projects_scroll && $(window).scrollTop() < hire_scroll) {
         $(".about_button").removeClass("underline");
         $(".projects_button").addClass("underline");
         $(".hire_button").removeClass("underline");
         $(".contact_button").removeClass("underline");
-        interval();
+        // interval();
     }
     else if ($(window).scrollTop() >= hire_scroll && $(window).scrollTop() < contact_scroll) {
         $(".about_button").removeClass("underline");
         $(".projects_button").removeClass("underline");
         $(".hire_button").addClass("underline");
         $(".contact_button").removeClass("underline");
-        interval();
+        // interval();
     }
     else if ($(window).scrollTop() >= contact_scroll) {
         $(".about_button").removeClass("underline");
         $(".projects_button").removeClass("underline");
         $(".hire_button").removeClass("underline");
         $(".contact_button").addClass("underline");
-        interval();
+        // interval();
     }
 }, 250);
 
