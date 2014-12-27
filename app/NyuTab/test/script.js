@@ -212,7 +212,7 @@ function startTime() {
     
     var t = setTimeout(function(){startTime()},500);
     // checkCookie();
-    checkHour();
+    // checkHour();
 }
 
 function checkHour() {
@@ -235,6 +235,7 @@ function checkHour() {
                 $("#image").attr("src", night);
             }
     });
+    var z = setTimeout(function(){checkHour()},3000)
 }
 
 function checkTime(i) {
