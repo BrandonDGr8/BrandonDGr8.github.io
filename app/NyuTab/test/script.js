@@ -235,7 +235,7 @@ function checkHour() {
                 $("#image").attr("src", night);
             }
     });
-    var z = setTimeout(function(){checkHour()},3000)
+    var z = setTimeout(function(){checkHour()},5000)
 }
 
 function checkTime(i) {
@@ -322,7 +322,7 @@ function checkCookie() {
             dawn = $.cookie('dawncustom');
     }
     
-    var r = setTimeout(function(){checkCookie()},3000);
+    var r = setTimeout(function(){checkCookie()},5000);
 }
 
 function saveCustom(input) {
