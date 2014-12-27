@@ -211,7 +211,7 @@ function startTime() {
     }
     
     var t = setTimeout(function(){startTime()},500);
-    checkCookie();
+    // checkCookie();
     checkHour();
 }
 
@@ -219,16 +219,16 @@ function checkHour() {
     $(document).ready(function () {
         var today = new Date();
         var h = today.getHours();
-            if (h < 5) {
+            if (h < 4) {
                 $("#image").attr("src", night);
             }
-            else if (h < 9) {
+            else if (h < 10) {
                 $("#image").attr("src", dawn);
             }
-            else if (h < 17) {
+            else if (h < 15) {
                 $("#image").attr("src", day);
             }
-            else if (h < 21) {
+            else if (h < 20) {
                 $("#image").attr("src", sunset);
             }
             else {
@@ -320,7 +320,8 @@ function checkCookie() {
         else
             dawn = $.cookie('dawncustom');
     }
-        
+    
+    var r = setTimeout(function(){checkCookie()},3000);
 }
 
 function saveCustom(input) {
