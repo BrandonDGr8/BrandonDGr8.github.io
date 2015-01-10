@@ -232,36 +232,56 @@ function checkHour() {
         var today = new Date();
         var h = today.getHours();
 
-            if (h < 4) {
-                if (c !== 1) {
+            //set to time of day once; check cookie once it does.
 
+            if (h < 4) {
+
+                if (k !== 1) {
                     $("#image").attr("src", night);
-                    c = 1;
-                    checkCookie();
+                    k = 1;
                 }
+                
+                if (c !== 1) {
+                    checkCookie();
+                    c = 1;
+                }
+
             }
             else if (h < 10) {
 
-                if (c !== 2) {
+                if (k !== 2) {
                     $("#image").attr("src", dawn);
-                    c = 2;
-                    checkCookie();
+                    k = 2;
                 }
+                
+                if (c !== 2) {
+                    checkCookie();
+                    c = 2;
+                }
+                
             }
             else if (h < 15) {
+
+                if (k !== 3) {
+                    $("#image").attr("src", day);
+                    k = 3;
+                }
                 
                 if (c !== 3) {
-                    $("#image").attr("src", day);
-                    c = 3;
                     checkCookie();
+                    c = 3;
                 }
             }
             else if (h < 20) {
+
+                if (k !== 4) {
+                    $("#image").attr("src", sunset);
+                    k = 4;
+                }
                 
                 if (c !== 4) {
-                    $("#image").attr("src", sunset);
-                    c = 4;
                     checkCookie();
+                    c = 4;
                 }
             }
             else {
