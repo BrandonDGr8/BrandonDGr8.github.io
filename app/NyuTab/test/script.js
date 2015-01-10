@@ -4,6 +4,7 @@ var dawn = "";
 var sunset = "";
 
 var c = 0;  //variable for checkHour to see if hour changes
+var k = 0;  //variable for checkHour to
 
 $(document).ready(function () {
     $(".button").fadeTo("fast",0.2);
@@ -233,29 +234,29 @@ function checkHour() {
 
             if (h < 4) {
                 $("#image").attr("src", night);
-                if (c !== 4) {
-                    c = 4;
+                if (c !== 1) {
+                    c = 1;
                     checkCookie();
                 }
             }
             else if (h < 10) {
                 $("#image").attr("src", dawn);
-                if (c !== 10) {
-                    c = 10;
+                if (c !== 2) {
+                    c = 2;
                     checkCookie();
                 }
             }
             else if (h < 15) {
                 $("#image").attr("src", day);
-                if (c !== 15) {
-                    c = 15;
+                if (c !== 3) {
+                    c = 3;
                     checkCookie();
                 }
             }
             else if (h < 20) {
                 $("#image").attr("src", sunset);
-                if (c !== 20) {
-                    c = 20;
+                if (c !== 4) {
+                    c = 4;
                     checkCookie();
                 }
             }
@@ -280,28 +281,24 @@ function checkCookie() {
         day = "img/mountains-day-1.jpg";
         dawn = "img/mountains-dawn-1.jpg";
         sunset = "img/mountains-sunset-1.jpg";
-        // console.log("null");
     }
     else if (s == "mountains") {
         night = "img/mountains-night-1.jpg";
         day = "img/mountains-day-1.jpg";
         dawn = "img/mountains-dawn-1.jpg";
         sunset = "img/mountains-sunset-1.jpg";
-        // console.log("mountains");
     }
     else if (s == "beach") {
         night = "img/beach-night-1.jpg";
         day = "img/beach-day-1.jpg";
         dawn = "img/beach-dawn-1.jpg";
         sunset = "img/beach-sunset-1.jpg";
-        // console.log("beach");
     }
     else if (s == "sky") {
         night = "img/sky-night-1.jpg";
         day = "img/sky-day-1.jpg";
         dawn = "img/sky-dawn-1.jpg";
         sunset = "img/sky-sunset-1.jpg";
-        // console.log("sky");
     }
     else if (s == "city") {
         night = "img/city-night-1.jpg";
