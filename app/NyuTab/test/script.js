@@ -130,30 +130,39 @@ $(document).ready(function () {
 
     $(".mountains").click(function () {
         $.cookie("scene", "mountains", {expires:365});
+        checkCookie();
     });
     $(".beach").click(function () {
         $.cookie("scene", "beach", {expires:365});
+        checkCookie();
     });
     $(".sky").click(function () {
         $.cookie("scene", "sky", {expires:365});
+        checkCookie();
     });
     $(".city").click(function () {
         $.cookie("scene", "city", {expires:365});
+        checkCookie();
     });
     $(".arctic").click(function () {
         $.cookie("scene", "arctic", {expires:365});
+        checkCookie();
     });
     $(".forest").click(function () {
         $.cookie("scene", "forest", {expires:365});
+        checkCookie();
     });
     $(".desert").click(function () {
         $.cookie("scene", "desert", {expires:365});
+        checkCookie();
     });
     $(".earth").click(function () {
         $.cookie("scene", "earth", {expires:365});
+        checkCookie(); 
     });
     $(".custom").click(function () {
         $.cookie("scene", "custom", {expires:365});
+        checkCookie();
     });
 
 
@@ -212,30 +221,51 @@ function startTime() {
     
     var t = setTimeout(function(){startTime()},500);
     // checkCookie();
-    // checkHour();
+    checkHour();
 }
 
 function checkHour() {
     $(document).ready(function () {
         var today = new Date();
         var h = today.getHours();
+
+        var c = 0;
+
             if (h < 4) {
                 $("#image").attr("src", night);
+                if (c !== 4) {
+                    c = 4;
+                    checkCookie();
+                }
             }
             else if (h < 10) {
                 $("#image").attr("src", dawn);
+                if (c !== 10) {
+                    c = 10;
+                    checkCookie();
+                }
             }
             else if (h < 15) {
                 $("#image").attr("src", day);
+                if (c !== 15) {
+                    c = 15;
+                    checkCookie();
+                }
             }
             else if (h < 20) {
                 $("#image").attr("src", sunset);
+                if (c !== 20) {
+                    c = 20;
+                    checkCookie();
+                }
             }
             else {
                 $("#image").attr("src", night);
             }
     });
-    var z = setTimeout(function(){checkHour()},5000)
+    // var z = setTimeout(function(){checkHour()},5000)
+
+    //future idea: find a way to set image after time period has changed so gifs can loop without interruption
 }
 
 function checkTime(i) {
@@ -322,7 +352,7 @@ function checkCookie() {
             dawn = $.cookie('dawncustom');
     }
     
-    var r = setTimeout(function(){checkCookie()},5000);
+    // var r = setTimeout(function(){checkCookie()},5000);
 }
 
 function saveCustom(input) {
