@@ -3,6 +3,8 @@ var day = "";
 var dawn = "";
 var sunset = "";
 
+var c = 0;  //variable for checkHour to see if hour changes
+
 $(document).ready(function () {
     $(".button").fadeTo("fast",0.2);
     $(".button").mouseenter(function () {
@@ -228,8 +230,6 @@ function checkHour() {
     $(document).ready(function () {
         var today = new Date();
         var h = today.getHours();
-
-        var c = 0;
 
             if (h < 4) {
                 $("#image").attr("src", night);
