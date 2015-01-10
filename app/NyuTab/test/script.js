@@ -234,59 +234,94 @@ function checkHour() {
 
             //set to time of day once; check cookie once it does.
 
-            if (h < 4) {
+            //put c before
+            console.log("Before: " + c);
 
-                if (k !== 1) {
-                    $("#image").attr("src", night);
-                    k = 1;
-                }
-                
-                if (c !== 1) {
-                    checkCookie();
-                    c = 1;
-                }
+            if (h < 4 && c !== 1) {
+
+                $("#image").attr("src", night);
+                checkCookie();
+                c = 1;
 
             }
-            else if (h < 10) {
+            else if (h < 10 && c != 2) {
 
-                if (k !== 2) {
-                    $("#image").attr("src", dawn);
-                    k = 2;
-                }
-                
-                if (c !== 2) {
-                    checkCookie();
-                    c = 2;
-                }
+                $("#image").attr("src", dawn);
+                checkCookie();
+                c = 2;
                 
             }
-            else if (h < 15) {
+            else if (h < 15 && c != 3) {
 
-                if (k !== 3) {
-                    $("#image").attr("src", day);
-                    k = 3;
-                }
-                
-                if (c !== 3) {
-                    checkCookie();
-                    c = 3;
-                }
-            }
-            else if (h < 20) {
+                $("#image").attr("src", day);
+                checkCookie();
+                c = 3;
 
-                if (k !== 4) {
-                    $("#image").attr("src", sunset);
-                    k = 4;
-                }
-                
-                if (c !== 4) {
-                    checkCookie();
-                    c = 4;
-                }
             }
+            else if (h < 20 && c != 4) {
+
+                $("#image").attr("src", sunset);
+                checkCookie();
+                c = 4;
+
+            }
+
+            // if (h < 4) {
+
+            //     if (k !== 1) {
+            //         $("#image").attr("src", night);
+            //         k = 1;
+            //     }
+                
+            //     if (c !== 1) {
+            //         checkCookie();
+            //         c = 1;
+            //     }
+
+            // }
+            // else if (h < 10) {
+
+            //     if (k !== 2) {
+            //         $("#image").attr("src", dawn);
+            //         k = 2;
+            //     }
+                
+            //     if (c !== 2) {
+            //         checkCookie();
+            //         c = 2;
+            //     }
+                
+            // }
+            // else if (h < 15) {
+
+            //     if (k !== 3) {
+            //         $("#image").attr("src", day);
+            //         k = 3;
+            //     }
+                
+            //     if (c !== 3) {
+            //         checkCookie();
+            //         c = 3;
+            //     }
+            // }
+            // else if (h < 20) {
+
+            //     if (k !== 4) {
+            //         $("#image").attr("src", sunset);
+            //         k = 4;
+            //     }
+                
+            //     if (c !== 4) {
+            //         checkCookie();
+            //         c = 4;
+            //     }
+            // }
             else {
                 $("#image").attr("src", night);
             }
+
+            
+            console.log("After: " + c);
     });
     // var z = setTimeout(function(){checkHour()},5000)
 
