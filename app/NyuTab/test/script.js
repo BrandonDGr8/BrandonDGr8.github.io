@@ -233,29 +233,33 @@ function checkHour() {
         var h = today.getHours();
 
             if (h < 4) {
-                $("#image").attr("src", night);
                 if (c !== 1) {
+
+                    $("#image").attr("src", night);
                     c = 1;
                     checkCookie();
                 }
             }
             else if (h < 10) {
-                $("#image").attr("src", dawn);
+
                 if (c !== 2) {
+                    $("#image").attr("src", dawn);
                     c = 2;
                     checkCookie();
                 }
             }
             else if (h < 15) {
-                $("#image").attr("src", day);
+                
                 if (c !== 3) {
+                    $("#image").attr("src", day);
                     c = 3;
                     checkCookie();
                 }
             }
             else if (h < 20) {
-                $("#image").attr("src", sunset);
+                
                 if (c !== 4) {
+                    $("#image").attr("src", sunset);
                     c = 4;
                     checkCookie();
                 }
