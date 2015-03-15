@@ -16,31 +16,27 @@ $(document).ready(function(){
 		$("#navS").fadeTo("fast", 0);
 		$("#navS").hide("fast");
 	});
-
+	//cycles through the hackathon photos
 	var intervalID;
-
-	function picLoops() { //cycles through the hackathon photos
+	function picLoops() { 
 		var backImg = $('.hack-logos img:first-child');
 		backImg.siblings().hide();
 		backImg.remove();
 		$('.hack-logos').append(backImg);
 		backImg.fadeIn();
 	};
-
+	//cycles through the mobile hackathon photos
 	intervalID = setInterval(function(){picLoops();}, 2000);
-
 	var intervalIDm;
-
-	function picLoopsM() { //cycles through the mobile hackathon photos
+	function picLoopsM() { 
 		var backImg = $('.hack-logos-m img:first-child');
 		backImg.siblings().hide();
 		backImg.remove();
 		$('.hack-logos-m').append(backImg);
 		backImg.fadeIn();
 	};
-
 	intervalIDm = setInterval(function(){picLoopsM();}, 2000);
-
+	//reveal text links in contacts page
 	$('.iContainer').mouseenter(function() {
 		if ($(this).hasClass('cEmail')) {
 			$('.contactText').hide();
@@ -62,11 +58,9 @@ $(document).ready(function(){
 			$('.contactText').hide();
 			$('.cResume').show();
 		};
-
 	});
-
 });
-
+//scroll effect to anchors
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
