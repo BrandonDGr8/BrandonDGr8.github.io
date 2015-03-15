@@ -1,0 +1,296 @@
+@font-face{
+	font-family: "Cicle Semi";
+	src: url(font/CicleSemi.ttf);
+}
+@font-face{
+	font-family: "Monospace";
+	src: url(font/cour.ttf);
+}
+html, body {
+	font-family: Cicle Semi, sans-serif;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%;
+}
+#navbar {
+	position: fixed;
+		top: 0;
+		left: 0;
+	height: 100%;
+	width: 110px;
+	background-color: #272532;
+	z-index: 20;
+	opacity: 1;
+}
+#navbar A {
+	text-decoration: none;
+}
+#navS {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -999;
+}
+.button {
+	position: relative;
+		top: 0;
+		left: 0;
+	height: 110px;
+	width: 110px;
+	z-index: 21;
+	font-size: 1.4em;
+	text-align: center;
+	color: white;
+	line-height: 110px;
+	vertical-align: middle;
+	cursor: pointer;
+	transition:width 0.7s;
+	-webkit-transition:width 0.5s;
+}
+.button:hover {
+	width: 165px;
+}
+.buttonText{
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+#homeButton {
+	background-color: #3771c8;
+}
+#aboutButton {
+	background-color: #2a7fff;
+}
+#experienceButton {
+	background-color: #3771c8;
+}
+#projectsButton {
+	background-color: #2a7fff;
+}
+#contactButton {
+	background-color: #3771c8;
+}
+#home {
+	position: relative;
+	width: 100%;
+	display: table;
+	line-height: 0;
+	z-index: 6
+}
+#homeBackground {
+	display: table-cell;
+}
+#homeBGimg {
+	width: 100%;
+}
+#homeTextContainer {
+	position: absolute;
+		top: 0;
+		left: 110px;
+		margin-top: 10vw;
+		margin-left: 11vw;
+	text-align: center;
+	color: white;
+	z-index: 1;
+}
+#homeText {
+	font-size: 3.0vw;
+	line-height: 3.0vw;
+	margin: 0;
+}
+#homeText span {
+	font-size: 6.8vw;
+	line-height: 6.8vw;
+}
+.body {
+	display: table;
+	margin-bottom: 10.38vw;
+}
+.image {
+	position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	height: 100%;
+	width: auto;
+	display: block;
+	margin: auto;
+}
+#about {
+	position: relative;
+	width: 100%;
+	background-color: #5599ff;
+	display: table;
+	z-index: 5;
+}
+.bodyContainer {
+	display: table-cell;
+}
+.header {
+	margin-top: 5.19vw;
+	margin-bottom: 5.19vw;
+	margin-right: 5.19vw;
+	font-size: 5.19vw;
+	text-align: right;
+	color: white;
+}
+.bType1 {
+	margin-left: 110px;
+	margin-right: 5.19vw;
+}
+#about .imgContainer, #about .text {
+ 	display: table-cell;
+	vertical-align: top;
+}
+#about .imgContainer {
+	position: relative;
+	width: 40%;
+}
+#about img {
+	border-radius: 100%;
+}
+.text {
+	width: 60%;
+	font-size: 2.26vw;
+	text-align: left;
+	color: white;
+	display: table-cell;
+}
+.miniHeader {
+	margin-bottom: 2.0vw;
+	color: white;
+	font-size: 3vw;
+}
+.mHType1 {
+	text-align: right;
+}
+.mHType2 {
+	text-align: left;
+}
+#experience {
+	position: relative;
+	width: 100%;
+	background-color: #5f8dd3;
+	display: table;
+	z-index: 5;
+	overflow: hidden;
+}
+.bType2 {
+	margin-left: calc(110px + 5.19vw);
+	margin-right: 0;
+}
+#experience .imgContainer, #experience .text {
+ 	display: table-cell;
+	vertical-align: top;
+}
+#experience .imgContainer {
+	position: relative;
+	width: 40%;
+}
+.divider {
+	height: 1px;
+	margin-bottom: 5.19vw;
+	margin-left: calc(5.19vw + 110px);
+	margin-right: 5.19vw;
+	background-color: white;
+}
+.languages, .technologies {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 2.0vw;
+}
+.languages {
+	float: left;
+	margin-left: calc(110px + 5.19vw);
+	text-align: left;
+}
+.technologies {
+	float: right;
+	margin-right: 5.19vw;
+	text-align: right;
+}
+.bType3 {
+	clear: both;
+	position: relative;
+	width: calc(100% - 10.38vw - 110px);
+	margin-left: calc(5.19vw + 110px);
+	margin-right: 5.19vw;
+	margin-bottom: 10.38vw;
+}
+.bType3 .text {
+	width: 25% !important;
+}
+.textRight {
+	padding-left: 5.19vw;
+}
+.bType3 .imgContainer {
+	width: 50% !important;
+}
+.imgContainerMobile {
+	display: none;
+}
+#projects {
+	position: relative;
+	width: 100%;
+	background-color: #5599ff;
+	display: table;
+	z-index: 5;
+	overflow: hidden;
+}
+#projects .imgContainer, #projects .text {
+ 	display: table-cell;
+	vertical-align: top;
+}
+#projects .imgContainer {
+	position: relative;
+	width: 40%;
+}
+#contact {
+	position: relative;
+	width: 100%;
+	background-color: #5f8dd3;
+	display: table;
+	z-index: 5;
+}
+#contact .body {
+	margin-left: calc(110px + 5.19vw);
+}
+#contact .text {
+ 	display: table-cell;
+	vertical-align: top;
+	text-align: center;
+}
+.iContainer {
+	display: inline-block;
+	color: white;
+	margin-right: 5.19vw;
+	margin-bottom: 2.60vw;
+}
+.iContainer p {
+	margin-top: 1vw;
+	margin-bottom: 0;
+	transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+.iContainer p:hover {
+	color: #aaaaff;
+}
+#contact i {
+	font-size: 10.38vw;
+	transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+#contact i:hover {
+	color: #aaaaff;
+}
+.bodyContainer a {
+	text-decoration: none;
+	color: white;
+}
+.contactText {
+	display: none;
+	padding-right: 5.19vw;
+}

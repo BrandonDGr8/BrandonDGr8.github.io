@@ -1,0 +1,416 @@
+#topBar {
+	height: 50px;
+	width: 100%;
+	background-color: #1a1a1a;
+	text-align: center;
+	color: white;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+    font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
+    z-index: 999;
+    margin: 0%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    overflow: hidden;
+}
+#barAbout {
+	height: 50px;
+	width: 20%;
+	/*background-color: #2c3e50;*/
+	left: 0%;
+	position: absolute;
+    margin: 0%;
+    cursor: pointer;
+    overflow: hidden;
+}
+#barEducation {
+	height: 50px;
+	width: 20%;
+	/*background-color: #2c3e50;*/
+	left: 20%;
+	position: absolute;
+    margin: 0%;
+    cursor: pointer;
+    overflow: hidden;
+}
+#barName {
+	height: 50px;
+	width: 20%;
+	/*background-color: #2c3e50;*/
+	left: 40%;
+	position: absolute;
+    margin: 0%;
+    cursor: pointer;
+    overflow: hidden;
+}
+#barProjects {
+	height: 50px;
+	width: 20%;
+	/*background-color: #2c3e50;*/
+	left: 60%;
+	position: absolute;
+    margin: 0%;
+    cursor: pointer;
+    overflow: hidden;
+}
+#barContact {
+	height: 50px;
+	width: 20%;
+	/*background-color: #2c3e50;*/
+	left: 80%;
+	position: absolute;
+    margin: 0%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.barHighlight {
+    background-color: #3498db;
+}
+.barHighlightStay {
+    background-color: #2980b9;
+}
+.spaceTop {
+    /*height: 50px;
+    width: 100%;
+    background-color: #e74c3c;
+    left: 0%;
+    top: 50px;
+    position: absolute;
+    z-index: -1;*/
+}
+.spaceBot {                     /*EDIT WHEN YOU EDIT mainFront HEIGHT*/
+   /* height: 50px;
+    width: 100%;
+    background-color: #e74c3c;
+    left: 0%;
+    top: 85%;
+    position: absolute;
+    z-index: -1;*/
+}
+.mainBack {
+    
+    width: 100%;
+    left: 0%;
+    top: 50px;
+    position: absolute;
+    z-index: -1;
+}
+.mainFront {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    /*left: 10%;*/
+    /*top: 14%;*/
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 0%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    z-index: -1;
+    border-radius: 0px;
+}
+.footer {
+    height: 50px;
+    width: 100%;
+    left: 0%;
+    /*top: 92%;*/
+    position: fixed;
+        bottom: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    z-index: 998;
+    margin: 0%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.footerText {
+    color: white;
+    font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
+}
+.footerLeft {
+    font-size: 0.8333333em;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    text-align: left;
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.footerRight {
+    font-size: 1.3em;
+    top: -23%;
+    left: 50%;
+    position: absolute;
+    text-align: right;
+    float: right;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.frontHeader {
+
+}
+.frontPara {
+    font-family: 'Open Sans', 'Metrophobic',helvetica, sans-serif;
+    text-align: center;
+}
+#backAbout {
+    background-color: #e74c3c;
+    /*height: 100%;*/
+}
+#frontAbout {
+    background-color: #ef8b80;
+    /*height: 490px;*/
+}
+#textAbout {
+
+}
+#footerAbout {
+    background-color: #c0392b;
+}
+
+
+#backEdu {
+    background-color: #2ecc71;
+    /*height: 185%;*/
+}
+#frontEdu {
+    background-color: #69dd9a;
+    /*height: 970px;*/
+}
+#textEdu {
+
+}
+#footerEdu {
+    background-color: #27ae60;
+}
+
+
+#backProj {
+    background-color: #f1c40f;
+    /*height: 250%;*/
+}
+#frontProj {
+    background-color: #f5d657;
+    /*height: 1400px;*/
+}
+#textProj {
+
+}
+.topProjects {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#footerProj {
+    background-color: #f39c12;
+}
+
+
+#backContact {
+    background-color: #e67e22;
+    /*height: 100%;*/
+}
+#frontContact {
+    background-color: #eea667;
+    /*height: 400px;*/
+}
+#textContact {
+
+}
+.contactLink {
+    font-size: 2.3em;
+}
+#footerContact {
+    background-color: #d35400;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.right {
+    float: right;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.leftText {
+    font-family: 'Open Sans', 'Metrophobic',helvetica, sans-serif;
+}
+.rightText {
+    font-family: 'Open Sans', 'Metrophobic',helvetica, sans-serif;
+}
+
+.hline {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%; 
+    background-color: #000000;
+    height: 1px;
+}
+
+.hlineSmall {
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%; 
+    background-color: #000000;
+    height: 1px;
+}
+
+.hlineAbout {
+    display: block;
+    margin-left: 17%;
+    margin-right: 17%; 
+    background-color: #e74c3c;
+    height: 1px;
+}
+
+.hlineSmallAbout {
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%; 
+    background-color: #e74c3c;
+    height: 1px;
+}
+
+.hlineEdu {
+    display: block;
+    margin-left: 17%;
+    margin-right: 17%; 
+    background-color: #2ecc71;
+    height: 1px;
+}
+
+.hlineSmallEdu {
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%; 
+    background-color: #2ecc71;
+    height: 1px;
+}
+
+.hlineProj {
+    display: block;
+    margin-left: 17%;
+    margin-right: 17%; 
+    background-color: #f1c40f;
+    height: 1px;
+}
+
+.hlineSmallProj {
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%; 
+    background-color: #f1c40f;
+    height: 1px;
+}
+
+.hlineContact {
+    display: block;
+    margin-left: 17%;
+    margin-right: 17%; 
+    background-color: #e67e22;
+    height: 1px;
+}
+
+.hlineSmallContact {
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%; 
+    background-color: #e67e22;
+    height: 1px;
+}
+
+
+h1 {
+    font-size: 0.8em; /*14pt: 1.1666666em*/
+    position: relative;
+    font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
+}
+h2 {
+    font-size: 0.8em;  /*10pt*/
+    position: relative;
+    font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
+}
+h3 {
+    font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+h4 {
+    font-family: 'Open Sans', 'Metrophobic', helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+}
+img {
+    border-radius: 100%;   
+}
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+body {
+    background-color: #e74c3c;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.webLink {
+    text-decoration: underline;
+}
+li {
+    /*list-style-type: none;*/
+}
+@media only screen and (max-width: 1024px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
+@media only screen and (max-width: 768px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
+@media only screen and (max-width: 600px) {
+
+     /*body { font-size: 0.7em; }*/
+
+}
+@media only screen and (max-width: 480px) {
+
+     body { font-size: 0.1em; }
+
+}
+@media only screen and (max-width: 320px) {
+
+     body { font-size: 0.1em; }
+
+}

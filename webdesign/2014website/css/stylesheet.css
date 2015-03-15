@@ -1,0 +1,122 @@
+body{
+	background-color: #ecf0f1;
+}
+* {
+	color: #ecf0f1;
+}
+.vis{
+	/*border:2px solid #00BFFF;*/
+	/*border-radius:5px;*/
+}
+.header{
+	/*padding:0px;
+	background-color: #004ECC;
+	height:100px;
+	width:text-align:center;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;         */
+}
+.photo {
+	position: absolute;
+	left: 17%;
+}
+.photoR {
+	position: absolute;
+	left: 71%;
+}
+img {
+	border-radius: 100%;
+}
+.textH {
+	color: #34495e;
+	text-align: center;
+	font-family: 'Metrophobic', sans-serif;
+}
+.headerP {
+	font-size: 20px;
+	font-family: 'Metrophobic', sans-serif;
+}
+.separate{
+	height:10px;
+	clear:both;
+}
+.left{
+	padding:15px;
+	background-color: #e67e22;
+	float:left;
+/*	height:1000px;
+	width:470px;*/
+	height:2200px;
+	width:31%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.right{
+	padding:15px;
+	background-color: #2980b9;
+	float:right;
+/*	height:1000px;
+	width:1000px;*/
+	height:2200px;
+	width:68%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.footer{
+	padding:15px;
+	background-color: #e74c3c;
+	height:70px;
+	width:text-align:center;
+	clear:both;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+h1{
+	color: #ecf0f1;
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+div > p {
+	text-align: center;
+	font-family: 'Metrophobic', sans-serif;
+}
+div > h2 {
+	color: #ecf0f1;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-size: 40px;
+}
+div > h4 {
+	color: #ecf0f1;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	font-size: 20px;
+}
+div > h3 {
+	color: #ecf0f1;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	font-size: 40px;
+}
+.leftP {
+	font-family: 'Metrophobic', sans-serif;
+	text-align: left;
+	font-size: 20px;
+}
+.rightP {
+	font-family: 'Metrophobic', sans-serif;
+	text-align: right;
+	font-size: 20px;
+}
+li {
+	margin-left: 20px;
+	list-style-type: none;
+}
+.footerP {
+	text-align: left;
+}
