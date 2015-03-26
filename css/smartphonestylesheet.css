@@ -1,17 +1,3 @@
-@font-face{
-	font-family: "Cicle Semi";
-	src: url(font/CicleSemi.ttf);
-}
-body {
-	font-family: Cicle Semi, sans-serif;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	height: 100%;
-}
 #navbar {
 	display: none;
 }

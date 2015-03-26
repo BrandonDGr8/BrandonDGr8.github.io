@@ -1,12 +1,3 @@
-body {
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	height: 100%;
-}
 #navbar {
 	display: none;
 }
@@ -152,7 +143,4 @@ body {
 }
 .imgContainerMobile {
 	display: none;
-}
-#home {
-	background-color: gray;
 }
