@@ -29,7 +29,7 @@ body {
     // @media (max-width: 768px) {
     // 	align-items: flex-end;
     // }
-    @media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    @media screen and (max-device-width: 550px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
     	align-items: center;
     }
     @media (max-width: 550px) {
@@ -58,7 +58,7 @@ body {
 	    // @media (max-width: 768px) {
 	    // 	background-position: right;
 	    // }
-	    @media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	    @media screen and (max-device-width: 550px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 	    	display: none;
 	    	height: 0;
 	    	width: 0;
@@ -86,7 +86,7 @@ body {
 	    // 	margin: 0 auto;
 	    // 	margin-bottom: 4em;
 	    // }
-	    @media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	    @media screen and (max-device-width: 550px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 	    	color: black;
 	    }
 	    @media (max-width: 550px) {
@@ -96,7 +96,7 @@ body {
 	    #profile {
 	    	display: none;
 
-	    	@media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	    	@media screen and (max-device-width: 550px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 	    		display: block;
 		    	border-radius: 100%;
 		    	height: 125px;
@@ -142,7 +142,7 @@ body {
 				font-size: 35px;
 				color: $white;
 
-				@media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+				@media screen and (max-device-width: 550px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 					color: black;
 				}
 				@media (max-width: 550px) {
@@ -174,7 +174,7 @@ body {
 			a {
 				margin: 1em 1em;
 				color: $white;
-				@media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+				@media screen and (max-device-width: 550px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 					color: black;
 				}
 				@media (max-width: 550px) {
@@ -183,7 +183,7 @@ body {
 			}
 			a:visited {
 				color: $white;
-				@media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+				@media screen and (max-device-width: 550px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 					color: black;
 				}
 				@media (max-width: 550px) {
