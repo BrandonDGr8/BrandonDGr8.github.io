@@ -60,9 +60,13 @@ body {
 	    // }
 	    @media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 	    	display: none;
+	    	height: 0;
+	    	width: 0;
 	    }
 	    @media (max-width: 550px) {
 	    	display: none;
+	    	height: 0;
+	    	width: 0;
 	    }
 	}
 
