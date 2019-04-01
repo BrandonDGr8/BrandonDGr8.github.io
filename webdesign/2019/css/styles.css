@@ -1,0 +1,37 @@
+body { background-color: #e0dae2; color: #e0dae2; font-family: "Oxygen", sans-serif; width: 100%; height: 100%; top: 0; left: 0; margin: 0; padding: 0; }
+
+.container-intro { width: 100%; height: 100%; top: 0; left: 0; position: fixed; }
+
+h1, h2 { margin: 0; }
+
+.container-left { width: 50%; height: 100%; background-color: #5300a2; top: 0; left: -600px; display: flex; justify-content: center; align-items: center; float: left; }
+
+.container-left .info-container { width: 100%; text-align: center; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none; }
+
+.container-left .info-container .title-name { font-size: 35pt; font-weight: 700; letter-spacing: 35px; display: block; }
+
+.container-left .info-container .subtitle { font-size: 19.5pt; font-weight: 500; letter-spacing: 20.2px; display: block; margin-left: -0.6em; }
+
+.container-left .info-container .subtitle span.seperator { letter-spacing: 5px; }
+
+.container-left .info-container .icons-contain { margin-top: 5em; margin-left: 2.4em; }
+
+.container-left .info-container .icons-contain i { color: #e0dae2; letter-spacing: 70px; font-size: 22pt; }
+
+.container-left .info-container .icons-contain i:hover { -webkit-transition: color 0.2s; -moz-transition: color 0.2s; -o-transition: color 0.2s; -ms-transition: color 0.2s; transition: color 0.2s; color: #ac75ea; }
+
+.container-right { width: 50%; height: 100%; top: 0; left: 50%; float: right; font-size: 0; }
+
+.container-right .brandon-img { top: 0; left: calc(50% + 100px); width: calc(50% - 100px); z-index: -1; position: absolute; }
+
+.container-right .purp { top: 0; left: 0; display: inline-block; height: 100%; width: 50px; }
+
+.container-right .purp3 { background-color: #641cb5; }
+
+.container-right .purp2 { background-color: #ac75ea; }
+
+.container-right .purp1 { background-color: #dfcbf8; opacity: .75; }
+
+.container-right .purp0 { background-color: #e0dae2; opacity: .5; }
+
+.container-bottom { position: absolute; top: 100%; left: 0; width: 100%; height: 100%; background: #5300a2; }
